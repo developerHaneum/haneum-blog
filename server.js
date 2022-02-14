@@ -24,9 +24,4 @@ app.use((req, res, next) => {
     res.sendFile(path.join(__dirname, './index.html'));
   }
 });
-app.use('/static', express.static(path.resolve(__dirname, 'dist')));
-
-app.get('/*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
-});
 app.listen(8080);
