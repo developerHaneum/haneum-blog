@@ -6,7 +6,6 @@ const app = express();
 const nodeEnv = process.env.NODE_ENV || 'development';
 
 app.use(require('webpack-dev-middleware')(compiler));
-app.use(require('webpack-hot-middleware')(compiler));
 app.use((req, res, next) => {
   if (nodeEnv === 'development') {
     // 웹팩이 처리한 html 경로를 찾는다.

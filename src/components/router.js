@@ -7,9 +7,7 @@ export const router = (target, path, routes, routesTitle) => {
   }
   if (!routes[path]) {
     if (path === '/') {
-      console.log(1);
     } else {
-      console.log(2);
       document.title = routesTitle['/404'];
       target.innerHTML = routes['/404'];
     }
