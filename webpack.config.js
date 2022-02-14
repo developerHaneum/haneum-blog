@@ -2,16 +2,12 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 const nodeEnv = process.env.NODE_ENV || 'development';
 
 module.exports = {
   mode: nodeEnv === 'development' ? 'development' : 'production',
   entry: {
-    main:
-      nodeEnv === 'development'
-        ? ['webpack-hot-middleware/client', './src/app.js']
-        : './src/app.js',
+    main: './src/app.js',
   },
   output: {
     path: path.resolve('./dist'),
@@ -42,6 +38,5 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[name].css',
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
 };
