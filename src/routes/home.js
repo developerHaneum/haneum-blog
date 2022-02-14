@@ -11,6 +11,8 @@ const contentMsg = `
     <p>If you are curious about my web application or information, please check <a href="https://github.com/developerHaneum">github</a> or check out <a href="/menu" class="inlink">more articles</a> on my blog.</p>
     <p>Also, to check more blog posts, click <a href="/menu" class="inlink">the Menu link</a> at the top or access <a href="/menu" class="inlink">/menu</a>.</p>
     <br/>
+    <p>Attension, this web application does not support IE browser.</p>
+    <br/>
     <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
 `; // html content
 export const home = () => maker(contentMsg);

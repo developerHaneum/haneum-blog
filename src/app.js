@@ -3,8 +3,9 @@ import './app.css';
 import { router } from './components/router';
 import { home } from './routes/home.js';
 import { menu } from './routes/menu.js';
-import { deployVercel } from './routes/deployVercel.js';
 import { notFoundPage } from './routes/notFoundPage.js';
+import { deployVercel } from './routes/deployVercel.js';
+import { nodejsBasic } from './routes/nodejsBasic';
 
 const root = document.querySelector('#root');
 const routes = {
@@ -12,12 +13,14 @@ const routes = {
   '/': home(),
   '/menu': menu(),
   '/deploy-vercel': deployVercel(),
+  '/nodejs-basic': nodejsBasic(),
   '/404': notFoundPage(),
 };
 const routesTitle = {
   '/': 'Haneum Blog',
   '/menu': 'Menu',
   '/deploy-vercel': 'Deploy with Vercel',
+  '/nodejs-basic': 'Node.js basic',
   '/404': '404 Not found page',
 };
 
