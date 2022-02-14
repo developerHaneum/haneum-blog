@@ -1,4 +1,3 @@
-import './home.css';
 import { maker } from '../components/maker.js';
 
 const contentMsg = `

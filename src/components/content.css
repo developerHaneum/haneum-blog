@@ -37,3 +37,6 @@
 .content .third-list {
     text-indent: 5.7vh;
 }
+.content pre {
+    white-space: pre-line;
+}

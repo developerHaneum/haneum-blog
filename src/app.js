@@ -3,6 +3,7 @@ import './app.css';
 import { router } from './components/router';
 import { home } from './routes/home.js';
 import { menu } from './routes/menu.js';
+import { deployVercel } from './routes/deployVercel.js';
 import { notFoundPage } from './routes/notFoundPage.js';
 
 const root = document.querySelector('#root');
@@ -10,11 +11,13 @@ const routes = {
   // This is router link urls match and route content
   '/': home(),
   '/menu': menu(),
+  '/deploy-vercel': deployVercel(),
   '/404': notFoundPage(),
 };
 const routesTitle = {
   '/': 'Haneum Blog',
   '/menu': 'Menu',
+  '/deploy-vercel': 'Deploy with Vercel',
   '/404': '404 Not found page',
 };
 

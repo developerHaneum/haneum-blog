@@ -1,4 +1,3 @@
-import './home.css';
 import { maker } from '../components/maker.js';
 
 const contentMsg = `
@@ -12,9 +11,9 @@ const contentMsg = `
         </ul>
         <br/>
         <ul>
-            <li class="second-list"><h2>Webpack related posts</h2></li>
+            <li class="second-list"><h2>Vercel related posts</h2></li>
             <ul>
-                <li class="third-list">To be added.</li>
+                <li class="third-list"><a class="inlink" href="/deploy-vercel">Deploy with Vercel</a></li>
             </ul>
         <ul>
     </ul>
