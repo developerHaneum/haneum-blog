@@ -43,4 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routes, routesTitle);
+  // logics feathers
 });

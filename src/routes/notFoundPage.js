@@ -7,6 +7,7 @@ export const notFoundPage = () => {
         <p style="line-height: 3.0625vh;">죄송합니다. 웹 페이지 링크나 알고 있는 주소를 통해 웹 페이지에 액세스하세요.</p>
         <p style="line-height: 3.0625vh;">申し訳ありません。 Webページへのリンクまたは既知のアドレスからWebページにアクセスします。</p>
         <p style="line-height: 3.0625vh;">Verzeihung. Greifen Sie über einen Webseiten-Link oder eine Ihnen bekannte Adresse auf die Webseite zu.</p>
+        <a href="/">홈페이지로 이동하세요.</a>
       </div>
     </div>`;
 };
