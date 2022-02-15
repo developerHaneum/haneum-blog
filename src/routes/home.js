@@ -14,5 +14,5 @@ const contentMsg = `
     <p>Sorry, this web application does not support IE browser.</p>
     <br/>
     <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
-`; // html content
+`;
 export const home = () => maker(contentMsg);

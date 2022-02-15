@@ -9,7 +9,6 @@ import { algorithmStack } from './posts/algorithmPosts/algorithmStack.js';
 
 const root = document.querySelector('#root');
 const routes = {
-  // This is router link urls match and route content
   '/': home(),
   '/menu': menu(),
   '/algorithm-basic': algorithmBasic(),
@@ -27,10 +26,7 @@ const routesTitle = {
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', e => {
     if (e.target.className === 'inlink') {
-      // e.target의 class가 inlink 라면 SPA를 동작시킨다. outlink때문에 기능추가.
-      // a href를 클릭 했다면.
       e.preventDefault();
-      // e.target.href 는 https:// ... 부터 시작되니 이 부분을 삭제한 그 다음의 문자열을 가지고 와야한다.
       router(
         root,
         e.target.href.substring(
@@ -43,5 +39,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routes, routesTitle);
-  // pages & routes logics feathers
 });
