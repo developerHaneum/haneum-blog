@@ -3,14 +3,27 @@
     align-items: center;
     height: 4.25vh;
     font-weight: 600;
-    border: black solid 1.375px;
     box-sizing: border-box;
     font-size: 3vh;
 }
-
 .header-menu {
-    border-right: black solid 1.375px;
     padding: 0.5vh 1vh 0.5vh 1vh;
+}
+@media (prefers-color-scheme: light) {
+    .header {
+        border: black solid 1.375px;
+    }
+    .header-menu {
+        border-right: black solid 1.375px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .header {
+        border: white solid 1.365px;
+    }
+    .header-menu {
+        border-right: white solid 1.375px;
+    }
 }
 .header-menu a {
     all: unset;

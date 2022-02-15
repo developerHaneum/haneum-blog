@@ -1,26 +1,26 @@
 import './reset.css';
 import './app.css';
-import { router } from './components/router';
+import { router } from './components/router.js';
 import { home } from './routes/home.js';
 import { menu } from './routes/menu.js';
 import { notFoundPage } from './routes/notFoundPage.js';
-import { deployVercel } from './routes/deployVercel.js';
-import { nodejsBasic } from './routes/nodejsBasic';
+import { algorithmBasic } from './posts/algorithmPosts/algorithmBasic.js';
+import { algorithmStack } from './posts/algorithmPosts/algorithmStack.js';
 
 const root = document.querySelector('#root');
 const routes = {
   // This is router link urls match and route content
   '/': home(),
   '/menu': menu(),
-  '/deploy-vercel': deployVercel(),
-  '/nodejs-basic': nodejsBasic(),
+  '/algorithm-basic': algorithmBasic(),
+  '/algorithm-stack': algorithmStack(),
   '/404': notFoundPage(),
 };
 const routesTitle = {
   '/': 'Haneum Blog',
   '/menu': 'Menu',
-  '/deploy-vercel': 'Deploy with Vercel',
-  '/nodejs-basic': 'Node.js basic',
+  '/algorithm-basic': 'JavaScript basic algorithm',
+  '/algorithm-stack': 'JavaScript stack algorithm',
   '/404': '404 Not found page',
 };
 
@@ -43,5 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routes, routesTitle);
-  // logics feathers
+  // pages & routes logics feathers
 });
