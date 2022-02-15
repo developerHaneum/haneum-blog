@@ -9,6 +9,6 @@ const contentMsg = `
         <li class="disc-list">Pop: 아직 제거되지 않은 가장 최근에 추가된 요소를 제거하는 연산</li>
     </ul>
     <br/>
-    <a href="${stackImgUrl}">Reference process</a>
+    <img src="${stackImgUrl}"/>
 `;
 export const algorithmStack = () => maker(contentMsg);
