@@ -7,20 +7,19 @@ export const router = (target, path, routes, routesTitle) => {
     if (path === '/') {
     } else {
       document.title = routesTitle['/404'];
-      target.innerHTML = routes['/404'];
+      target.innerHTML = routes['/404']();
     }
     return;
   }
   window.onpopstate = e => {
     if (!routes[window.location.pathname]) {
-      console.log(window.location.pathname);
       document.title = routesTitle['/404'];
-      target.innerHTML = routes['/404'];
+      target.innerHTML = routes['/404']();
       return;
     }
     document.title = routesTitle[window.location.pathname];
-    target.innerHTML = routes[window.location.pathname];
+    target.innerHTML = routes[window.location.pathname]();
   };
   document.title = routesTitle[path];
-  target.innerHTML = routes[path];
+  target.innerHTML = routes[path]();
 };

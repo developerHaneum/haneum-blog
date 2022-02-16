@@ -9,11 +9,11 @@ import { algorithmStack } from './posts/algorithms/algorithmStack.js';
 
 const root = document.querySelector('#root');
 const routes = {
-  '/': home(),
-  '/menu': menu(),
-  '/algorithm-basic': algorithmBasic(),
-  '/algorithm-stack': algorithmStack(),
-  '/404': notFoundPage(),
+  '/': home,
+  '/menu': menu,
+  '/algorithm-basic': algorithmBasic,
+  '/algorithm-stack': algorithmStack,
+  '/404': notFoundPage,
 };
 const routesTitle = {
   '/': 'Haneum Blog',
