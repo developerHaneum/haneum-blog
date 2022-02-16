@@ -1,4 +1,4 @@
-import { maker } from '../../components/maker.js';
+import { maker } from '../components/maker.js';
 
 const contentMsg = `
     <h1>JavaScript functional programming first level function</h1>

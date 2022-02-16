@@ -12,7 +12,15 @@ const contentMsg = `
             <li class="second-list"><h2>Personal posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="/">Hi, it's nice to meet you.</a></p></li>
+                <li class="third-list"><p><a href="/my-principle">My principle.</a></p></li>
             </ul>
+        </ul>
+        <br/>
+        <ul>
+            <li class="second-list"><h2>JavaScript related posts</h2></li>
+            <ul>
+                <li class="third-list"><p><a href="/js-pushstate">pushState</a></p></li>
+            </ur>
         </ul>
         <br/>
         <ul>

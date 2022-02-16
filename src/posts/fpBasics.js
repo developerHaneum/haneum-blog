@@ -1,4 +1,4 @@
-import { maker } from '../../components/maker.js';
+import { maker } from '../components/maker.js';
 
 const fpBasicsConceptUrl = `https://velog.io/@kyusung/함수형-프로그래밍-요약`;
 const contentMsg = `

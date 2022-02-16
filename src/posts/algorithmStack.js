@@ -1,4 +1,4 @@
-import { maker } from '../../components/maker.js';
+import { maker } from '../components/maker.js';
 
 const stackImgUrl = `https://camo.githubusercontent.com/7163784baed9e988949a1dfbf1e749eac91ea38cd1f738ec5094469f22242675/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f622f62342f4c69666f5f737461636b2e706e67`;
 const contentMsg = `
