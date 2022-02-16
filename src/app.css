@@ -16,6 +16,6 @@ body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
-code {
+pre, code {
     font-family: 'Source Code Pro', monospace;
 }

@@ -4,11 +4,10 @@ const stackImgUrl = `https://camo.githubusercontent.com/7163784baed9e988949a1dfb
 const contentMsg = `
     <h1>JavaScript stack algorithm</h1>
     <p>스택은 아래의 두 가지 연산을 가진 요소들의 집합인 추상 자료형입니다.</p>
-    <ul>
-        <li class="disc-list">Push: 집합에 요소를 추가하는 것</li>
-        <li class="disc-list">Pop: 아직 제거되지 않은 가장 최근에 추가된 요소를 제거하는 연산</li>
-    </ul>
     <br/>
-    <img src="${stackImgUrl}"/>
+    <p>Push: 집합에 요소를 추가하는 것</p>
+    <p>Pop: 아직 제거되지 않은 가장 최근에 추가된 요소를 제거하는 연산</p>
+    <br/>
+    <a href="${stackImgUrl}">Reference</a>
 `;
 export const algorithmStack = () => maker(contentMsg);

@@ -47,14 +47,14 @@
 .content .third-list {
     text-indent: 5.7vh;
 }
-.content .disc-list {
-    list-style: disc;
-    margin-top: 0.89375vh; /* 2.8 / 2 / 2 ... */
-    margin-bottom: 0.89375vh;
-    margin-left: 2.8vh;
-}
-.content img {
+/* .content img {
     border: black solid 1.375px;
     width: 33.8109375%;
     height: 33.8109375%;
+} */
+.content b {
+    font-weight: 500;
+}
+.content pre {
+    white-space: pre-wrap;
 }
