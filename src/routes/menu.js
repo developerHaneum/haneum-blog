@@ -19,8 +19,8 @@ const contentMsg = `
             <li class="second-list"><h2>JavaScript functional programming related posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="${fpRefUrl}">Reference</a></p></li>
-                <li class="third-list"><p><a class="inlink" href="/fp-basics">basics</a></p></li>
-                <li class="third-list"><p><a class="inlink" href="/fp-first-level-function">First level function</a></p></li>
+                <li class="third-list"><p><a href="/fp-basics">basics</a></p></li>
+                <li class="third-list"><p><a href="/fp-first-level-function">First level function</a></p></li>
             </ul>
         <ul>
         <br/>
