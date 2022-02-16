@@ -31,14 +31,6 @@
 .header-menu a:hover {
     color: royalblue;
 }
-/* .header-menu:focus {
-    outline: none;
-    background-color: royalblue;
-    color: white;
-}
-.header-menu:focus a:hover {
-    color: white; 
-} */
 .header-title {
     padding: 0.5vh 1vh 0.5vh 1vh;
 }
@@ -48,11 +40,3 @@
 .header-title a:hover {
     color: royalblue;
 }
-/* .header-title:focus {
-    outline: none;
-    background-color: royalblue;
-    color: white;
-}
-.header-title:focus a:hover {
-    color: white;
-} */
