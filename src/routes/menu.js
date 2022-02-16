@@ -11,7 +11,7 @@ const contentMsg = `
         <ul>
             <li class="second-list"><h2>Personal posts</h2></li>
             <ul>
-                <li class="third-list"><p><a class="inlink" href="/">Hi, it's nice to meet you.</a></p></li>
+                <li class="third-list"><p><a href="/">Hi, it's nice to meet you.</a></p></li>
             </ul>
         </ul>
         <br/>
@@ -28,8 +28,8 @@ const contentMsg = `
             <li class="second-list"><h2>JavaScript algorithms related posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="${algorithmRefUrl}">Reference</a></p></li>
-                <li class="third-list"><p><a class="inlink" href="/algorithm-basics">basics</a></p></li>
-                <li class="third-list"><p><a class="inlink" href="/algorithm-stack">Stack</a></p></li>
+                <li class="third-list"><p><a href="/algorithm-basics">basics</a></p></li>
+                <li class="third-list"><p><a href="/algorithm-stack">Stack</a></p></li>
             </ul>
         <ul>
         <br/>

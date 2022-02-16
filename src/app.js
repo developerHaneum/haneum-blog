@@ -32,7 +32,17 @@ const routesTitle = {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', e => {
-    if (e.target.className === 'inlink') {
+    if (
+      ((routes[
+        e.target.href.substring(
+          e.target.href.indexOf('/', 8),
+          e.target.href.length
+        )
+      ] ===
+        undefined) ===
+        false) ===
+      true
+    ) {
       // for outlink
       e.preventDefault();
       router(
