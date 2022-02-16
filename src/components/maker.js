@@ -5,6 +5,5 @@ export const maker = contentMsg => {
   return `
     ${header()}
     ${content(contentMsg)}
-
   `;
 };
