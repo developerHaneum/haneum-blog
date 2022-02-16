@@ -4,8 +4,8 @@ import { router } from './components/router.js';
 import { home } from './routes/home.js';
 import { menu } from './routes/menu.js';
 import { notFoundPage } from './routes/notFoundPage.js';
-import { algorithmBasic } from './posts/algorithmPosts/algorithmBasic.js';
-import { algorithmStack } from './posts/algorithmPosts/algorithmStack.js';
+import { algorithmBasic } from './posts/algorithms/algorithmBasic.js';
+import { algorithmStack } from './posts/algorithms/algorithmStack.js';
 
 const root = document.querySelector('#root');
 const routes = {
