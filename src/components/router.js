@@ -17,9 +17,17 @@ export const router = (target, path, routes, routesTitle) => {
       target.innerHTML = routes['/404']();
       return;
     }
-    document.title = routesTitle[window.location.pathname];
+    if (!routesTitle[window.location.pathname]) {
+      document.title = 'Haneum Blog';
+    } else {
+      document.title = routesTitle[window.location.pathname];
+    }
     target.innerHTML = routes[window.location.pathname]();
   };
-  document.title = routesTitle[path];
+  if (!routesTitle[path]) {
+    document.title = 'Haneum Blog';
+  } else {
+    document.title = routesTitle[path];
+  }
   target.innerHTML = routes[path]();
 };

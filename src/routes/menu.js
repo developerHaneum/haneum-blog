@@ -1,7 +1,10 @@
 import { maker } from '../components/maker.js';
 
-const algorithmRefUrl = `https://github.com/trekhleb/javascript-algorithms/blob/master/README.ko-KR.md`;
-const cleanCodeRefUrl = `https://github.com/qkraudghgh/clean-code-javascript-ko/blob/master/README.md`;
+const fpRefUrl = 'https://www.inflearn.com/course/functional-es6';
+const algorithmRefUrl =
+  'https://github.com/trekhleb/javascript-algorithms/blob/master/README.ko-KR.md';
+const cleanCodeRefUrl =
+  'https://github.com/qkraudghgh/clean-code-javascript-ko/blob/master/README.md';
 const contentMsg = `
     <ul>
         <li class="first-list"><h1>Blog posts</h1></li>
@@ -13,10 +16,19 @@ const contentMsg = `
         </ul>
         <br/>
         <ul>
+            <li class="second-list"><h2>JavaScript functional programming related posts</h2></li>
+            <ul>
+                <li class="third-list"><p><a href="${fpRefUrl}">Reference</a></p></li>
+                <li class="third-list"><p><a class="inlink" href="/fp-basics">basics</a></p></li>
+                <li class="third-list"><p><a class="inlink" href="/fp-first-level-function">First level function</a></p></li>
+            </ul>
+        <ul>
+        <br/>
+        <ul>
             <li class="second-list"><h2>JavaScript algorithms related posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="${algorithmRefUrl}">Reference</a></p></li>
-                <li class="third-list"><p><a class="inlink" href="/algorithm-basic">Basic</a></p></li>
+                <li class="third-list"><p><a class="inlink" href="/algorithm-basics">basics</a></p></li>
                 <li class="third-list"><p><a class="inlink" href="/algorithm-stack">Stack</a></p></li>
             </ul>
         <ul>
