@@ -57,13 +57,3 @@
 .content b {
     font-weight: 500;
 }
-.content details {
-    display: block;
-}
-.content summary {
-    font-weight: 400;
-    line-height: 3.0625vh;
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-}
