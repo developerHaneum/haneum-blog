@@ -13,6 +13,7 @@ const contentMsg = `
             <ul>
                 <li class="third-list"><p><a href="/">Hi, it's nice to meet you.</a></p></li>
                 <li class="third-list"><p><a href="/my-principle">My principle.</a></p></li>
+                <li class="third-list"><p><a href="/blog-structure">How is this blog structured?</a></p></li>
             </ul>
         </ul>
         <br/>

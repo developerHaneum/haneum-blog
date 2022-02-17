@@ -7,6 +7,7 @@ import { fpBasics } from '../posts/fpBasics.js';
 import { fpFirstLevelFunction } from '../posts/fpFirstLevelFunction.js';
 import { myPrinciple } from '../posts/myPrinciple.js';
 import { jsPushState } from '../posts/jsPushState.js';
+import { blogStructure } from '../posts/blogStructure.js';
 
 export const routes = {
   '/': home,
@@ -17,5 +18,6 @@ export const routes = {
   '/fp-first-level-function': fpFirstLevelFunction,
   '/my-principle': myPrinciple,
   '/js-pushstate': jsPushState,
+  '/blog-structure': blogStructure,
   '/404': notFoundPage,
 };

@@ -13,8 +13,11 @@ const contentMsg = `
     <p>If you are curious about my web application or information, please check <a href="https://github.com/developerHaneum">GitHub  </a> or check out <a href="/menu">more posts</a> on my blog.</p>
     <p>Also, to check more blog posts, click <a href="/menu">the Menu link</a> at the top or access <a href="/menu">/menu</a>.</p>
     <br/>
-    <p>Attention, this web application does not support IE browser.</p>
-    <p>And depending on the user's environment, the web application may be unstable.</p>
+    <details>
+        <summary>Attention</summary>
+        <p>This web application doesn't support IE browser.</p>
+        <p>And depending on the user's environment, the web application may be unstable.</p>
+    </details>
     <br/>
     <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
 `;
