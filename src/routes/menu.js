@@ -24,6 +24,8 @@ const contentMsg = `
             <li class="second-list"><h2>JavaScript related posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="/js-pushstate">pushState</a></p></li>
+                <li class="third-list"><p><a href="/js-indexof">indexOf</a></p></li>
+                <li class="third-list"><p><a href="/js-substring">substring</a></p></li>
             </ur>
         </ul>
         <br/>
@@ -31,33 +33,32 @@ const contentMsg = `
             <li class="second-list"><h2>JavaScript functional programming related posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="${fpRefUrl}">Reference</a></p></li>
-                <li class="third-list"><p><a href="/fp-basics">basics</a></p></li>
-                <li class="third-list"><p><a href="/fp-first-level-function">First level function</a></p></li>
+                <li class="third-list"><p><a href="/fp-Basics">Basics</a></p></li>
             </ul>
-        <ul>
+        </ul>
         <br/>
         <ul>
             <li class="second-list"><h2>JavaScript algorithms related posts</h2></li>
             <ul>
                 <li class="third-list"><p><a href="${algorithmRefUrl}">Reference</a></p></li>
-                <li class="third-list"><p><a href="/algorithm-basics">basics</a></p></li>
-                <li class="third-list"><p><a href="/algorithm-stack">Stack</a></p></li>
+                <li class="third-list"><p><a href="/algorithm-Basics">Basics</a></p></li>
             </ul>
-        <ul>
+        </ul>
         <br/>
         <ul>
             <li class="second-list"><h2>Clean code JavaScript related posts</h2></li>
             <ul>
                 <li class="third-list"><p><li class="third-list"><p><a href="${cleanCodeRefUrl}">Reference</a></p></li></p></li>
             </ul>
-        <ul>
+        </ul>
         <br/>
         <ul>
             <li class="second-list"><h2>CSS FlexBox related posts</h2></li>
             <ul>
-                <li class="third-list"><p><li class="third-list"><p><a href="${cssFlexBoxRefUrl}">Reference</a></p></li></p></li>
+                <li class="third-list"><p><a href="${cssFlexBoxRefUrl}">Reference</a></p></li>
+                <li class="third-list"><p><a href="/css-flexbox-Basics">Basics</a></p></li>
             </ul>
-        <ul>
-    </ul>
+        </ul>
+    <ul>
 `;
 export const menu = () => postMaker(contentMsg);
