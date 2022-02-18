@@ -2,7 +2,7 @@ import './reset.css';
 import './app.css';
 import { router } from './components/router.js';
 import { routes } from './components/routes.js';
-import { routesTitle } from './components/routesTitle.js';
+import { routeTitles } from './components/routeTitles.js';
 
 const root = document.querySelector('#root');
 
@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.href.length
           ),
           routes,
-          routesTitle
+          routeTitles
         );
       }
     }
   });
-  router(root, window.location.pathname, routes, routesTitle);
+  router(root, window.location.pathname, routes, routeTitles);
 });

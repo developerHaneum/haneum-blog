@@ -1,4 +1,4 @@
-import { maker } from '../components/maker.js';
+import { postsMaker } from '../components/postMaker.js';
 const contentMsg = `
     <h1>JavaScript pushState function</h1>
     <p><code>pushState(state, title, url)</code> 로 사용할 수  있으며,</p>
@@ -6,4 +6,4 @@ const contentMsg = `
     <br/>
     <p><a href="https://developer.mozilla.org/ko/docs/Web/API/History/pushState">Reference</a></p>
 `;
-export const jsPushState = () => maker(contentMsg);
+export const jsPushState = () => postsMaker(contentMsg);

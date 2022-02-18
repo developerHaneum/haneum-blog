@@ -1,4 +1,4 @@
-import { maker } from '../components/maker';
+import { postMaker } from '../components/postMaker';
 
 const contentMsg = `
     <h1>404 Not found page</h1>
@@ -7,4 +7,4 @@ const contentMsg = `
     <p>申し訳ありません。 上記のリンクテキストをクリックするか、既知のアドレスにアクセスしてください。</p>
     <p>Verzeihung. Bitte klicken Sie oben auf den Linktext oder greifen Sie von einer Ihnen bekannten Adresse darauf zu.</p>
 `;
-export const notFoundPage = () => maker(contentMsg);
+export const notFoundPage = () => postMaker(contentMsg);

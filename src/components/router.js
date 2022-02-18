@@ -1,4 +1,4 @@
-export const router = (target, path, routes, routesTitle) => {
+export const router = (target, path, routes, routeTitles) => {
   if (path === window.location.pathname) {
   } else {
     window.history.pushState(null, null, window.location.origin + path);
@@ -6,28 +6,28 @@ export const router = (target, path, routes, routesTitle) => {
   if (!routes[path]) {
     if (path === '/') {
     } else {
-      document.title = routesTitle['/404'];
+      document.title = routeTitles['/404'];
       target.innerHTML = routes['/404']();
     }
     return;
   }
   window.onpopstate = e => {
     if (!routes[window.location.pathname]) {
-      document.title = routesTitle['/404'];
+      document.title = routeTitles['/404'];
       target.innerHTML = routes['/404']();
       return;
     }
-    if (!routesTitle[window.location.pathname]) {
+    if (!routeTitles[window.location.pathname]) {
       document.title = 'Haneum Blog';
     } else {
-      document.title = routesTitle[window.location.pathname];
+      document.title = routeTitles[window.location.pathname];
     }
     target.innerHTML = routes[window.location.pathname]();
   };
-  if (!routesTitle[path]) {
+  if (!routeTitles[path]) {
     document.title = 'Haneum Blog';
   } else {
-    document.title = routesTitle[path];
+    document.title = routeTitles[path];
   }
   target.innerHTML = routes[path]();
 };

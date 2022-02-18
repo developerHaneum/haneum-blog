@@ -1,4 +1,4 @@
-import { maker } from '../components/maker.js';
+import { postMaker } from '../components/postMaker.js';
 
 const contentMsg = `
     <h1>Hi, it's nice to meet you.</h1>
@@ -18,4 +18,4 @@ const contentMsg = `
     <br/>
     <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
 `;
-export const home = () => maker(contentMsg);
+export const home = () => postMaker(contentMsg);

@@ -1,4 +1,4 @@
-import { maker } from '../components/maker.js';
+import { postMaker } from '../components/postMaker.js';
 
 const contentMsg = `
     <h1>How is this blog structured?</h1>
@@ -25,4 +25,4 @@ const contentMsg = `
         <li class="second-list"><p>&lt;posts-name&gt;.js: HTML과 Style과 JS를 로드한 뒤 로직을 실행하는 window.onload 함수를 사용하여 각 라우트 페이지당 상태 관리를 하고 있음.</p></li>
     </ul>
 `;
-export const blogStructure = () => maker(contentMsg);
+export const blogStructure = () => postMaker(contentMsg);
