@@ -22,12 +22,12 @@
 }
 .content h1 {
     font-weight: 500;
-    font-size: 2.9125vh; /*75 + 2.5 / 5 / 5 */
+    font-size: 2.9vh; /*75 + 2.5 / 5 / 5 */
     padding-bottom: 2.1375vh; /* font-size / 2*/
 }
 .content h2 {
     font-weight: 500;
-    font-size: 2.813125vh;
+    font-size: 2.7vh;
     padding-bottom: 2.017421875vh; /* font size / 2 / 2 - font size */
 }
 .content p, br {
