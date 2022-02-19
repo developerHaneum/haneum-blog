@@ -5,8 +5,8 @@ import { algorithmBasics } from '../posts/algorithmBasics.js';
 import { fpBasics } from '../posts/fpBasics.js';
 import { myPrinciple } from '../posts/myPrinciple.js';
 import { jsPushState } from '../posts/jsPushState.js';
-import { blogStructure } from '../posts/blogStructure.js';
 import { oneTargets } from '../posts/oneTargets.js';
+import { favoriteMusic } from '../posts/favoriteMusic.js';
 
 export const routes = {
   '/': home,
@@ -15,7 +15,7 @@ export const routes = {
   '/fp-basics': fpBasics,
   '/my-principle': myPrinciple,
   '/js-pushstate': jsPushState,
-  '/blog-structure': blogStructure,
   '/2021-targets': oneTargets,
+  '/favorite-music': favoriteMusic,
   '/404': notFoundPage,
 };
