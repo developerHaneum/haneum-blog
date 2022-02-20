@@ -15,7 +15,7 @@ const contentMsg = `
             <li class="third-list">
                 <p><a href="/">Hi, it's nice to meet you.</a></p>
                 <p><a href="/my-principle">My principle.</a></p>
-                <p><a href="/2021-targets">2021 목표 (Korean)</a></p>
+                <p><a href="/targets">목표 (Korean)</a></p>
                 <p><a href="/favorite-music">My favorite music</a></p>
             </li>
         </ul>
