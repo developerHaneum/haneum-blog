@@ -21,14 +21,13 @@
 }
 .content h1 {
     font-weight: 500;
-    font-size: 2.8vh; /*75 + 2.5 / 5 / 5 */
-    margin-bottom: 2.1375vh; /* font-size / 2*/
+    font-size: 2.9vh; /*75 + 2.5 / 5 / 5 */
+    margin-bottom: 2.175vh; /* font-size / 2*/
 }
 .content h2 {
     font-weight: 500;
-    font-size: 2.7vh;
-    margin-top: 0.3782666015625vh;
-    margin-bottom: 2.017421875vh; /* font size / 2 / 2 - font size */
+    font-size: 2.8vh;
+    margin-bottom: 2.1vh; /* font size / 2 / 2 - font size */
 }
 .content p, br {
     line-height: 3.0625vh; /* 3 + 25 / 2 / 2 */
@@ -40,14 +39,11 @@
 .content a:hover {
     text-decoration: underline;
 }
-.content .first-list {
-    text-indent: 0;
-}
 .content .second-list {
-    text-indent: 2.7vh;
+    margin-left: 2.7vh;
 }
 .content .third-list {
-    text-indent: 5.7vh;
+    margin-left: 5.7vh;
 }
 .content b {
     font-weight: 500;
