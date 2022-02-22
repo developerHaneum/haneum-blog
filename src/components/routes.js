@@ -7,6 +7,7 @@ import { myPrinciple } from '../posts/myPrinciple.js';
 import { jsPushState } from '../posts/jsPushState.js';
 import { targets } from '../posts/targets.js';
 import { favoriteMusic } from '../posts/favoriteMusic.js';
+import { gitCommitMsgRule } from '../posts/gitCommitMsgRule';
 
 export const routes = {
   '/': home,
@@ -18,4 +19,5 @@ export const routes = {
   '/js-pushstate': jsPushState,
   '/targets': targets,
   '/favorite-music': favoriteMusic,
+  '/git-commit-msg-rule': gitCommitMsgRule,
 };

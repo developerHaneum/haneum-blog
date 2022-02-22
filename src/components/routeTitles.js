@@ -7,4 +7,5 @@ export const routeTitles = {
   '/targets': '목표',
   '/favorite-music': 'My favorite music',
   '/404': '404 Not found page',
+  '/git-commit-msg-rule': 'Git commit message rule',
 };

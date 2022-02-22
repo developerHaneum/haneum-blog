@@ -73,11 +73,10 @@ const contentMsg = `
     </ul>
     <br/>
     <ul>
-    <li class="second-list"><h2>CSS FlexBox related posts</h2></li>
+    <li class="second-list"><h2>Git related posts</h2></li>
     <ul>
         <li class="third-list">
-            <p><a href="${cssFlexBoxRefUrl}">Reference</a></p>
-            <p><a href="/css-flexbox-basics">CSS FlexBox 기본기 ${koreanPostIndication}</a></p>
+            <p><a href="/git-commit-msg-rule">Git commit message 규칙 ${koreanPostIndication}</a></p>
         </li>
     </ul>
 </ul>
