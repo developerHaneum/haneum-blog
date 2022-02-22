@@ -21,12 +21,12 @@
 }
 .content h1 {
     font-weight: 500;
-    font-size: 2.9vh; /*75 + 2.5 / 5 / 5 */
+    font-size: 2.8vh; /*75 + 2.5 / 5 / 5 */
     margin-bottom: 2.175vh; /* font-size / 2*/
 }
 .content h2 {
     font-weight: 500;
-    font-size: 2.8vh;
+    font-size: 2.7vh;
     margin-bottom: 2.1vh; /* font size / 2 / 2 - font size */
 }
 .content p, br {
@@ -51,7 +51,16 @@
 .content .strike {
     text-decoration: line-through;
 }
+@media (prefers-color-scheme: light) {
+    .content code {
+        background-color: rgb(239, 241, 242);
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .content code {
+        background-color: rgb(53, 57, 65);
+    }
+}
 .content code {
     display: inline-block;
-    background-color: rgb(239, 240, 241);
 }

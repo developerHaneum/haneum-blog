@@ -11,11 +11,11 @@ import { favoriteMusic } from '../posts/favoriteMusic.js';
 export const routes = {
   '/': home,
   '/menu': menu,
+  '/404': notFoundPage,
   '/algorithm-basics': algorithmBasics,
   '/fp-basics': fpBasics,
   '/my-principle': myPrinciple,
   '/js-pushstate': jsPushState,
   '/targets': targets,
   '/favorite-music': favoriteMusic,
-  '/404': notFoundPage,
 };

@@ -6,11 +6,18 @@ export const router = (target, path, routes, routeTitles) => {
   if (!routes[path]) {
     if (path === '/') {
     } else {
+      // 404
       document.title = routeTitles['/404'];
       target.innerHTML = routes['/404']();
     }
     return;
   }
+  if (!routeTitles[path]) {
+    document.title = 'Haneum Blog';
+  } else {
+    document.title = routeTitles[path];
+  }
+  target.innerHTML = routes[path]();
   window.onpopstate = e => {
     if (!routes[window.location.pathname]) {
       document.title = routeTitles['/404'];
@@ -24,10 +31,4 @@ export const router = (target, path, routes, routeTitles) => {
     }
     target.innerHTML = routes[window.location.pathname]();
   };
-  if (!routeTitles[path]) {
-    document.title = 'Haneum Blog';
-  } else {
-    document.title = routeTitles[path];
-  }
-  target.innerHTML = routes[path]();
 };

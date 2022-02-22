@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
           routeTitles
         );
       }
+      return;
     }
   });
   router(root, window.location.pathname, routes, routeTitles);

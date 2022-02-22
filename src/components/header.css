@@ -1,13 +1,11 @@
 .header {
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 4.25vh;
     font-weight: 600;
     box-sizing: border-box;
     font-size: 3vh;
-}
-.header-menu {
-    padding: 0.5vh 1vh 0.5vh 1vh;
 }
 @media (prefers-color-scheme: light) {
     .header {
@@ -24,6 +22,9 @@
     .header-menu {
         border-right: white solid 1.375px;
     }
+}
+.header-menu {
+    padding: 0.5vh 1vh 0.5vh 1vh;
 }
 .header-menu a {
     all: unset;
