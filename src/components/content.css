@@ -2,7 +2,7 @@
     padding: 1vh 1vh 1vh 1vh;
     box-sizing: border-box;
     height: 95.75vh;
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     overflow: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -21,7 +21,7 @@
 }
 .content h1 {
     font-weight: 500;
-    font-size: 2.8vh; /*75 + 2.5 / 5 / 5 */
+    font-size: 2.9vh; /*75 + 2.5 / 5 / 5 */
     margin-bottom: 2.175vh; /* font-size / 2*/
 }
 .content h2 {

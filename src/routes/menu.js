@@ -73,12 +73,12 @@ const contentMsg = `
     </ul>
     <br/>
     <ul>
-    <li class="second-list"><h2>Git related posts</h2></li>
-    <ul>
-        <li class="third-list">
-            <p><a href="/git-commit-msg-rule">Git commit message 규칙 ${koreanPostIndication}</a></p>
-        </li>
+        <li class="second-list"><h2>Git related posts</h2></li>
+        <ul>
+            <li class="third-list">
+                <p><a href="/git-commit-msg-rule">Git commit message 규칙 ${koreanPostIndication}</a></p>
+            </li>
+        </ul>
     </ul>
-</ul>
 `;
 export const menu = () => postMaker(contentMsg);
