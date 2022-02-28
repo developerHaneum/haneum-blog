@@ -2,7 +2,7 @@ import { postMaker } from '../components/postMaker.js';
 
 const contentMsg = `
     <h1>Hi, it is nice to meet you.</h1>
-    <p>My name is Cha Haneum and I am Korean.</p>
+    <p>My name is Cha Haneum and I am Korean 🇰🇷.</p>
     <p>And My job is Front-end developer.</p>
     <br/>
     <p>I really love basics JavaScript!</p>

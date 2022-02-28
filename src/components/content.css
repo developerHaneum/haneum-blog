@@ -2,7 +2,6 @@
     padding: 1vh 1vh 1vh 1vh;
     box-sizing: border-box;
     height: 95.75vh;
-    font-size: 2.6vh;
     overflow: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -21,16 +20,19 @@
 }
 .content h1 {
     font-weight: 500;
-    font-size: 2.9vh; /*75 + 2.5 / 5 / 5 */
-    margin-bottom: 2.175vh; /* font-size / 2*/
+    font-size: 2.9vh;
+    margin-bottom: 2.175vh;
 }
 .content h2 {
     font-weight: 500;
     font-size: 2.7vh;
-    margin-bottom: 2.1vh; /* font size / 2 / 2 - font size */
+    margin-bottom: 2.1vh;
+}
+.content p {
+    font-size: 2.6vh;
 }
 .content p, br {
-    line-height: 3.0625vh; /* 3 + 25 / 2 / 2 */
+    line-height: 3.0625vh;
 }
 .content a {
     all: unset;
@@ -38,12 +40,6 @@
 }
 .content a:hover {
     text-decoration: underline;
-}
-.content .second-list {
-    margin-left: 2.7vh;
-}
-.content .third-list {
-    margin-left: 5.7vh;
 }
 .content b {
     font-weight: 500;
@@ -63,4 +59,10 @@
 }
 .content code {
     display: inline-block;
+}
+.content .second-list {
+    margin-left: 2.7vh;
+}
+.content .third-list {
+    margin-left: 5.7vh;
 }
