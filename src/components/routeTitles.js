@@ -5,4 +5,6 @@ export const routeTitles = {
   '/404': '404 Not found page',
   '/git-commit-msg-rules': 'Git commit message rule',
   '/devil-putin': 'Devil Putin',
+  '/starting-school': 'Starting school',
+  '/cafe': 'Cafe',
 };

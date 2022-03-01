@@ -9,6 +9,8 @@ const contentMsg = `
             <li class="third-list">
                 <p><a href="/">Hi, Nice to meet you.</a></p>
                 <p><a href="/devil-putin">Devil Putin. ${koreanPostIndication}</a></p>
+                <p><a href="/starting-school">Starting School. ${koreanPostIndication}</a></p>
+                <p><a href="/cafe">Cafe. ${koreanPostIndication}</a></p>
             </li>
         </ul>
     </ul>
