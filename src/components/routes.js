@@ -3,7 +3,7 @@ import { menu } from '../routes/menu.js';
 import { notFoundPage } from '../routes/notFoundPage.js';
 import { fpBasics } from '../posts/fpBasics.js';
 import { gitCommitMsgRules } from '../posts/gitCommitMsgRules.js';
-import { ukraineRussiaWar } from '../posts/ukraineRussiaWar.js';
+import { devilPutin } from '../posts/devilPutin.js';
 
 export const routes = {
   '/': home,
@@ -11,5 +11,5 @@ export const routes = {
   '/404': notFoundPage,
   '/fp-basics': fpBasics,
   '/git-commit-msg-rules': gitCommitMsgRules,
-  '/ukraine-russia-war': ukraineRussiaWar,
+  '/devil-putin': devilPutin,
 };

@@ -1,15 +1,14 @@
 import { postMaker } from '../components/postMaker.js';
 
 const koreanPostIndication = '(Korean)';
-const fpRefUrl = 'https://www.inflearn.com/course/functional-es6';
 const contentMsg = `
     <h1>Blog posts</h1>
     <ul>
         <li class="second-list"><h2>Personal posts</h2></li>
         <ul>
             <li class="third-list">
-                <p><a href="/">Hi, it's nice to meet you.</a></p>
-                <p><a href="/ukraine-russia-war">Devil Putin. ${koreanPostIndication}</a></p>
+                <p><a href="/">Hi, Nice to meet you.</a></p>
+                <p><a href="/devil-putin">Devil Putin. ${koreanPostIndication}</a></p>
             </li>
         </ul>
     </ul>
@@ -27,7 +26,7 @@ const contentMsg = `
         <li class="second-list"><h2>Functional programming related posts</h2></li>
         <ul>
             <li class="third-list">
-                <p><a href="${fpRefUrl}">Reference</a></p>
+                <p><a href="https://www.inflearn.com/course/functional-es6">Reference</a></p>
                 <p><a href="/fp-basics">JavaScript functional programming basics ${koreanPostIndication}</a></p>
             </li>
         </ul>

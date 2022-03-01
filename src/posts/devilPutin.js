@@ -24,4 +24,4 @@ const contentMsg = `
     <br/>
     <p>За мир в Україні. (우크라이나의 평화를 위하여.)</p>
 `;
-export const ukraineRussiaWar = () => postMaker(contentMsg);
+export const devilPutin = () => postMaker(contentMsg);
