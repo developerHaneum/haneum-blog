@@ -11,6 +11,7 @@ const contentMsg = `
                 <p><a href="/devil-putin">Devil Putin. ${koreanPostIndication}</a></p>
                 <p><a href="/starting-school">Starting School. ${koreanPostIndication}</a></p>
                 <p><a href="/cafe">Cafe. ${koreanPostIndication}</a></p>
+                <p><a href="/election-promise">Election promise.</a></p>
             </li>
         </ul>
     </ul>
