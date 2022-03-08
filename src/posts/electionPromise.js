@@ -4,13 +4,6 @@ const contentMsg = `
     <h1>Election promise.</h1>
     <ul>
         <li class="second-list">
-            <p>슬로건</p>
-            <ul>
-                <li class="second-list">
-                    <p>저, 차한음은 합니다. (기.호.1.번.차.한.음!)</p>
-                </li>
-            </ul>
-            <br/>
             <p>공적(자리)의 욕 근절 실현</p>
             <ul>
                 <li class="third-list">
