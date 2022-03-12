@@ -4,7 +4,6 @@ import { router } from './components/router.js';
 import { routes, routeTitles } from './components/routes.js';
 
 const root = document.querySelector('#root');
-
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {

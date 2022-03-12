@@ -1,5 +1,4 @@
 export const router = (target, path, routes, routeTitles) => {
-  console.log(window.location.pathname);
   if (path === window.location.pathname) {
   } else {
     window.history.pushState(null, null, window.location.origin + path);

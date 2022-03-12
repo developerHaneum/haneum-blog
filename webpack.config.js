@@ -22,7 +22,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [
+          nodeEnv === 'development'
+            ? 'style-loader'
+            : {
+                loader: MiniCssExtractPlugin.loader,
+              },
+          'css-loader',
+        ],
       },
     ],
   },
