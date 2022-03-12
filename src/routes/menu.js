@@ -1,6 +1,6 @@
 import { postMaker } from '../components/postMaker.js';
 
-const koreanPostIndication = '(Korean)';
+const korean = '(Korean)';
 const contentMsg = `
     <h1>Blog posts</h1>
     <ul>
@@ -8,10 +8,8 @@ const contentMsg = `
         <ul>
             <li class="third-list">
                 <p><a href="/">Hi, Nice to meet you.</a></p>
-                <p><a href="/devil-putin">Devil Putin. ${koreanPostIndication}</a></p>
-                <p><a href="/starting-school">Starting School. ${koreanPostIndication}</a></p>
-                <p><a href="/cafe">Cafe. ${koreanPostIndication}</a></p>
-                <p><a href="/election-promise">Election promise.</a></p>
+                <p><a href="/devil-putin">Devil Putin. ${korean}</a></p>
+                <p><a href="/starting-school">Starting School. ${korean}</a></p>
             </li>
         </ul>
     </ul>
@@ -20,7 +18,7 @@ const contentMsg = `
         <li class="second-list"><h2>Git related posts</h2></li>
         <ul>
             <li class="third-list">
-                <p><a href="/git-commit-msg-rules">Git commit message rules ${koreanPostIndication}</a></p>
+                <p><a href="/git-commit-msg-rules">Git commit message rules ${korean}</a></p>
             </li>
         </ul>
     </ul>
@@ -29,8 +27,7 @@ const contentMsg = `
         <li class="second-list"><h2>Functional programming related posts</h2></li>
         <ul>
             <li class="third-list">
-                <p><a href="https://www.inflearn.com/course/functional-es6">Reference</a></p>
-                <p><a href="/fp-basics">JavaScript functional programming basics ${koreanPostIndication}</a></p>
+                <p><a href="/fp-basics">Basics ${korean}</a></p>
             </li>
         </ul>
     </ul>
