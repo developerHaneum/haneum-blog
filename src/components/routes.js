@@ -4,7 +4,6 @@ import { notFoundPage } from '../routes/notFoundPage.js';
 import { fpBasics } from '../posts/fpBasics.js';
 import { gitCommitMsgRules } from '../posts/gitCommitMsgRules.js';
 import { devilPutin } from '../posts/devilPutin.js';
-import { startingSchool } from '../posts/startingSchool.js';
 
 export const routes = {
   '/': home,
@@ -13,7 +12,6 @@ export const routes = {
   '/fp-basics': fpBasics,
   '/git-commit-msg-rules': gitCommitMsgRules,
   '/devil-putin': devilPutin,
-  '/starting-school': startingSchool,
 };
 
 export const routeTitles = {
@@ -23,5 +21,4 @@ export const routeTitles = {
   '/404': '404 Not found page',
   '/git-commit-msg-rules': 'Git commit message rule',
   '/devil-putin': 'Devil Putin.',
-  '/starting-school': 'Starting school.',
 };
