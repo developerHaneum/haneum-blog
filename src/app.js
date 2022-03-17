@@ -1,7 +1,8 @@
 import './reset.css';
 import './app.css';
 import { router } from './components/router.js';
-import { routes, routeTitles } from './components/routes.js';
+import { routes } from './components/routes.js';
+import { routeTitles } from './components/routeTitles.js';
 
 const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {

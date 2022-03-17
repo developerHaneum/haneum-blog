@@ -47,6 +47,9 @@
 .content .strike {
     text-decoration: line-through;
 }
+.content i {
+    font-style: italic;
+}
 @media (prefers-color-scheme: light) {
     .content code {
         background-color: rgb(239, 241, 242);
@@ -64,5 +67,5 @@
     margin-left: 2.7vh;
 }
 .content .third-list {
-    margin-left: 5.7vh;
+    margin-left: 3vh; /* 5.7vh */
 }

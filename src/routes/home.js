@@ -5,10 +5,12 @@ const contentMsg = `
     <p>My name is Cha Haneum and I am Korean.</p>
     <p>And My job is Front-end developer.</p>
     <br/>
-    <p>I really love basics JavaScript!</p>
-    <br/>
-    <p>I develop web applications using Vanilla JS and Express.js.</p>
+    <p>I develop web applications using basic JavaScript and Express.js.</p>
     <p>However, sometimes I also develop web applications with React.js and React.js packages.</p>
+    <br/>
+    <p>I always attach great importance to web accessibility and simple and intuitive web development.</p>
+    <p>I also dream of a web world where anyone from kindergarteners to the elderly can use it.</p>
+    </p>
     <br/>
     <p>If you are curious about my web application or information, please check <a href="https://github.com/developerHaneum">GitHub  </a> or check out <a href="/menu">more posts</a> on my blog.</p>
     <p>Also, to check more blog posts, click <a href="/menu">the Menu link</a> at the top or access <a href="/menu">/menu</a>.</p>

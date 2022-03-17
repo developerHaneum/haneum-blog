@@ -4,6 +4,10 @@ import { notFoundPage } from '../routes/notFoundPage.js';
 import { fpBasics } from '../posts/fpBasics.js';
 import { gitCommitMsgRules } from '../posts/gitCommitMsgRules.js';
 import { devilPutin } from '../posts/devilPutin.js';
+import { loveIs } from '../posts/loveIs.js';
+import { plan } from '../posts/plan.js';
+import { bloggingRules } from '../posts/bloggingRules.js';
+import { march } from '../posts/march.js';
 
 export const routes = {
   '/': home,
@@ -12,13 +16,8 @@ export const routes = {
   '/fp-basics': fpBasics,
   '/git-commit-msg-rules': gitCommitMsgRules,
   '/devil-putin': devilPutin,
-};
-
-export const routeTitles = {
-  '/': 'Haneum Blog',
-  '/menu': 'Menu',
-  '/fp-basics': 'JavaScript functional programming basic',
-  '/404': '404 Not found page',
-  '/git-commit-msg-rules': 'Git commit message rule',
-  '/devil-putin': 'Devil Putin.',
+  '/love-is': loveIs,
+  '/plan': plan,
+  '/blogging-rules': bloggingRules,
+  '/march': march,
 };
