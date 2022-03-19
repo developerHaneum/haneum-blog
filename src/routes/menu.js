@@ -13,6 +13,7 @@ const contentMsg = `
             <p><a href="/love-is">Love is.</a></p>
             <p><a href="/plan">Plan.</a></p>
             <p><a href="/march">March.</a></p>
+            <p><a href="/se">SE, I finally bought it.</a></p>
         </li>
       </ul>
       <br/>
@@ -28,13 +29,6 @@ const contentMsg = `
           <li class="third-list">
               <p><a href="/fp-basics">Basics ${korean}</a></p>
           </li>
-      </ul>
-      <br/>
-      <h2>Other posts</h2>
-      <ul>
-        <li class="third-list">
-         <p><a href="/blogging-rules">Blogging rules</a></p>
-        </li>
       </ul>
   </ul>
 `;

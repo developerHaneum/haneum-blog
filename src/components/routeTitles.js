@@ -7,6 +7,6 @@ export const routeTitles = {
   '/devil-putin': 'Devil Putin.',
   '/love-is': 'Love is.',
   '/plan': 'Plan.',
-  '/blogging-rules': 'Blogging rules.',
   '/march': 'March.',
+  '/se': 'SE, I finally bought it.',
 };

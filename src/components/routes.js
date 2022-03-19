@@ -6,8 +6,8 @@ import { gitCommitMsgRules } from '../posts/gitCommitMsgRules.js';
 import { devilPutin } from '../posts/devilPutin.js';
 import { loveIs } from '../posts/loveIs.js';
 import { plan } from '../posts/plan.js';
-import { bloggingRules } from '../posts/bloggingRules.js';
 import { march } from '../posts/march.js';
+import { se } from '../posts/se.js';
 
 export const routes = {
   '/': home,
@@ -18,6 +18,6 @@ export const routes = {
   '/devil-putin': devilPutin,
   '/love-is': loveIs,
   '/plan': plan,
-  '/blogging-rules': bloggingRules,
   '/march': march,
+  '/se': se,
 };
