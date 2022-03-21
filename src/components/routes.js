@@ -8,6 +8,7 @@ import { loveIs } from '../posts/loveIs.js';
 import { plan } from '../posts/plan.js';
 import { march } from '../posts/march.js';
 import { se } from '../posts/se.js';
+import { whatShouldIDo } from '../posts/whatShouldIDo';
 
 export const routes = {
   '/': home,
@@ -20,4 +21,5 @@ export const routes = {
   '/plan': plan,
   '/march': march,
   '/se': se,
+  '/what-should-i-do': whatShouldIDo,
 };

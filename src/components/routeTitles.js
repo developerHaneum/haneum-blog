@@ -9,4 +9,5 @@ export const routeTitles = {
   '/plan': 'Plan.',
   '/march': 'March.',
   '/se': 'SE, I finally bought it.',
+  '/cafe': 'Cafe reviews',
 };

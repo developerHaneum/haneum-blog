@@ -14,6 +14,7 @@ const contentMsg = `
             <p><a href="/plan">Plan.</a></p>
             <p><a href="/march">March.</a></p>
             <p><a href="/se">SE, I finally bought it.</a></p>
+            <p><a href="/cafe">Cafe reviews.</a></p>
         </li>
       </ul>
       <br/>
