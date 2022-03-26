@@ -29,7 +29,7 @@
 .header-menu a {
     all: unset;
 }
-.header-menu a:active {
+.header-menu a:hover {
     color: royalblue;
 }
 .header-title {
@@ -38,6 +38,6 @@
 .header-title a {
     all: unset;
 }
-.header-title a:active {
+.header-title a:hover {
     color: royalblue;
 }
