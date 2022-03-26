@@ -6,6 +6,9 @@ import { routeTitles } from './components/routeTitles.js';
 
 const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {
+  // For mobile height
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {
       if (

@@ -7,5 +7,7 @@ const contentMsg = `
     <p>申し訳ありません。 上記のリンクテキストをクリックするか、既知のアドレスにアクセスしてください。</p>
     <p>Verzeihung. Bitte klicken Sie oben auf den Linktext oder greifen Sie von einer Ihnen bekannten Adresse darauf zu.</p>
     <p>Pardon. Cliquez sur le texte du lien ci-dessus ou accédez à une adresse connue.</p>
+    <br/>
+    <p>MIT License © 2022 Cha Haneum</p>
 `;
 export const notFoundPage = () => postMaker(contentMsg);

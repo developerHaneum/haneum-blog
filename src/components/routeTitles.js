@@ -9,5 +9,5 @@ export const routeTitles = {
   '/plan': 'Plan.',
   '/march': 'March.',
   '/se': 'SE, I finally bought it.',
-  '/cafe': 'Cafe reviews',
+  '/js-spa': 'JavaScript로 SPA 구현하기.',
 };

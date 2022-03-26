@@ -9,6 +9,7 @@ import { plan } from '../posts/plan.js';
 import { march } from '../posts/march.js';
 import { se } from '../posts/se.js';
 import { whatShouldIDo } from '../posts/whatShouldIDo';
+import { jsSpa } from '../posts/jsSpa.js';
 
 export const routes = {
   '/': home,
@@ -22,4 +23,5 @@ export const routes = {
   '/march': march,
   '/se': se,
   '/what-should-i-do': whatShouldIDo,
+  '/js-spa': jsSpa,
 };
