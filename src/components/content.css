@@ -38,7 +38,7 @@
     all: unset;
     color: royalblue;
 }
-.content a:hover {
+.content a:active {
     text-decoration: underline;
 }
 .content b {
