@@ -38,8 +38,10 @@
     all: unset;
     color: royalblue;
 }
-.content a:hover {
-    text-decoration: underline;
+@media (hover: hover) {
+    .content a:hover {
+        text-decoration: underline;
+    }
 }
 .content b {
     font-weight: 600;

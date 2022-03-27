@@ -29,15 +29,18 @@
 .header-menu a {
     all: unset;
 }
-.header-menu a:hover {
-    color: royalblue;
-}
+
 .header-title {
     padding: 0.5vh 1vh 0.5vh 1vh;
 }
 .header-title a {
     all: unset;
 }
-.header-title a:hover {
-    color: royalblue;
+@media (hover: hover) {
+    .header-menu a:hover {
+        color: royalblue;
+    }
+    .header-title a:hover {
+        color: royalblue;
+    }
 }
