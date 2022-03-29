@@ -1,7 +1,7 @@
 .content {
     padding: 1vh 1vh 1vh 1vh;
     box-sizing: border-box;
-    height: calc(var(--vh, 1vh) * 100 - 4.5vh);
+    height: calc(var(--vh, 1vh) * 100 - 4.75vh);
     overflow: auto;
 }
 @media (prefers-color-scheme: light) {
