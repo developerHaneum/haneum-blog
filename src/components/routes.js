@@ -10,6 +10,7 @@ import { march } from '../posts/march.js';
 import { se } from '../posts/se.js';
 import { whatShouldIDo } from '../posts/whatShouldIDo';
 import { jsSpa } from '../posts/jsSpa.js';
+import { toMe } from '../posts/toMe.js';
 
 export const routes = {
   '/': home,
@@ -24,4 +25,5 @@ export const routes = {
   '/se': se,
   '/what-should-i-do': whatShouldIDo,
   '/js-spa': jsSpa,
+  '/to-me': toMe,
 };
