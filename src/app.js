@@ -4,11 +4,15 @@ import { router } from './components/router.js';
 import { routes } from './components/routes.js';
 import { routeTitles } from './components/routeTitles.js';
 
+const checkHeight = () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+};
 const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
+  checkHeight();
+  window.addEventListener('resize', () => checkHeight());
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {
       if (

@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 4.25vh;
+    width: 100vw;
+    height: 4.5vh;
     font-weight: 600;
     box-sizing: border-box;
-    font-size: 3vh;
+    font-size: 3.5vh;
 }
 @media (prefers-color-scheme: light) {
     .header {
@@ -23,24 +24,31 @@
         border-right: white solid 1.375px;
     }
 }
-.header-menu {
-    padding: 0.5vh 1vh 0.5vh 1vh;
-}
-.header-menu a {
-    all: unset;
-}
-
 .header-title {
     padding: 0.5vh 1vh 0.5vh 1vh;
 }
 .header-title a {
     all: unset;
 }
+.header-menu {
+    padding: 0.5vh 1vh 0.5vh 1vh;
+}
+.header-menu a {
+    all: unset;
+}
 @media (hover: hover) {
+    .header-title a:hover {
+        color: royalblue;
+    }
     .header-menu a:hover {
         color: royalblue;
     }
-    .header-title a:hover {
+}
+@media (hover: none) {
+    .header-title a:active {
+        color: royalblue;
+    }
+    .header-menu a:active {
         color: royalblue;
     }
 }
