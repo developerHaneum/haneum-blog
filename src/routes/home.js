@@ -12,7 +12,7 @@ const contentMsg = `
     <p>I also dream of a web world where anyone from kindergarteners to the elderly can use it.</p>
     </p>
     <br/>
-    <p>If you are curious about my web application or information, please check <a href="https://github.com/developerHaneum">GitHub</a> or send an <a href="mailto:chahaneum@icloud.com">email</a>.</p>
+    <p>If you are curious about my web application or information, please check <a href="https://github.com/developerHaneum">GitHub</a> or send an <a href="/contact">email</a>.</p>
     <p>Also, to check more blog posts, click <a href="/menu">the Menu link</a> at the top or access <a href="/menu">/menu</a>.</p>
     <br/>
     <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>

@@ -11,10 +11,12 @@ import { se } from '../posts/se.js';
 import { whatShouldIDo } from '../posts/whatShouldIDo';
 import { jsSpa } from '../posts/jsSpa.js';
 import { toMe } from '../posts/toMe.js';
+import { contact } from '../routes/contact.js';
 
 export const routes = {
   '/': home,
   '/menu': menu,
+  '/contact': contact,
   '/404': notFoundPage,
   '/fp-basics': fpBasics,
   '/git-commit-msg-rules': gitCommitMsgRules,

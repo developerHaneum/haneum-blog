@@ -30,8 +30,6 @@
 }
 .content p {
     font-size: 3vh;
-}
-.content p {
     margin-top: 0.4625vh;
     margin-bottom: 0.4625vh;
 }
@@ -41,6 +39,7 @@
 }
 .content a {
     all: unset;
+    cursor: pointer;
     color: royalblue;
 }
 @media (hover: hover) {

@@ -1,0 +1,5 @@
+.input-box textarea {
+    all: unset;
+    border: 1.375px solid black;
+    width: 100%;
+}

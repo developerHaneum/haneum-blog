@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100vw;
     height: 4.75vh;
     font-weight: 600;
     box-sizing: border-box;
@@ -29,12 +28,14 @@
 }
 .header-title a {
     all: unset;
+    cursor: pointer;
 }
 .header-menu {
     padding: 0.5vh 1vh 0.5vh 1vh;
 }
 .header-menu a {
     all: unset;
+    cursor: pointer;
 }
 @media (hover: hover) {
     .header-title a:hover {

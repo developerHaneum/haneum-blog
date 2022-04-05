@@ -5,7 +5,12 @@ const path = require('path');
 const app = express();
 const nodeEnv = process.env.NODE_ENV || 'development';
 
-app.use(require('webpack-dev-middleware')(compiler));
+app.use(
+  require('webpack-dev-middleware')(compiler, {
+    publicPath: require('./webpack.config.js').output.publicPath,
+    stats: { colors: true },
+  })
+);
 app.use((req, res, next) => {
   if (nodeEnv === 'development') {
     compiler.outputFileSystem.readFile(
