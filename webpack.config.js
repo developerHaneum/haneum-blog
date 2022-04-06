@@ -22,14 +22,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          nodeEnv === 'development'
-            ? 'style-loader'
-            : {
-                loader: MiniCssExtractPlugin.loader,
-              },
-          'css-loader',
-        ],
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
@@ -42,8 +35,5 @@ module.exports = {
       },
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
   ],
 };
