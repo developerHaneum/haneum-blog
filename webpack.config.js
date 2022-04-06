@@ -12,6 +12,7 @@ module.exports = {
   output: {
     path: path.resolve('./dist'),
     filename: '[name].js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -22,7 +23,14 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          nodeEnv === 'development'
+            ? 'style-loader'
+            : {
+                loader: MiniCssExtractPlugin.loader,
+              },
+          'css-loader',
+        ],
       },
     ],
   },
@@ -35,5 +43,8 @@ module.exports = {
       },
     }),
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
   ],
 };
