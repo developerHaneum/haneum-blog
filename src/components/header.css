@@ -45,11 +45,3 @@
         color: royalblue;
     }
 }
-@media (hover: none) {
-    .header-title a:active {
-        color: royalblue;
-    }
-    .header-menu a:active {
-        color: royalblue;
-    }
-}

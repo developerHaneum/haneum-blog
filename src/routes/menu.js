@@ -8,21 +8,8 @@ const contentMsg = `
       <ul>
         <li class="third-list">
           <p><a href="/">Hi, Nice to meet you.</a></p>
+          <p><a href="/what-is-developer">What is developer?</a></p>
         </li>
-      </ul>
-      <br/>
-      <h2>JavaScript related posts</h2>
-      <ul>
-          <li class="third-list">
-              <p><a href="/js-spa">JavaScript로 SPA 구현하기.</a></p>
-          </li>
-      </ul>
-      <br/>
-      <h2>Functional programming related posts</h2>
-      <ul>
-          <li class="third-list">
-              <p><a href="/fp-basics">Basics</a></p>
-          </li>
       </ul>
   </ul>
 `;

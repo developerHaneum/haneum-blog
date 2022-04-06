@@ -1,8 +1,7 @@
 import './reset.css';
 import './app.css';
 import { router } from './components/router.js';
-import { routes } from './components/routes.js';
-import { routeTitles } from './components/routeTitles.js';
+import { routes, routeTitles } from './components/routeContents.js';
 
 const checkHeight = () => {
   let vh = window.innerHeight * 0.01;
