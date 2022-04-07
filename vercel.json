@@ -1,5 +1,4 @@
 {
     "routes": [{ "src": "/[^.]+", "dest": "/", "status": 404}],
-    "trailingSlash": false,
     "cleanUrls": true
 }
