@@ -8,7 +8,7 @@ const contentMsg = `
       <ul>
         <li class="third-list">
           <p><a href="/">Hi, Nice to meet you.</a></p>
-          <p><a href="/what-is-developer">What is developer?</a></p>
+          <p><a href="/corona-diary">코로나 일지.</a></p>
         </li>
       </ul>
   </ul>
