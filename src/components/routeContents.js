@@ -43,4 +43,5 @@ export const routeTitles = {
   '/se': 'SE, I finally bought it.',
   '/js-spa': 'JavaScript로 SPA 구현하기.',
   '/to-me': '나에게.',
+  '/what-is-developer': '개발자란 무엇일까?',
 };
