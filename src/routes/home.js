@@ -1,5 +1,5 @@
 import { postMaker } from '../components/postMaker.js';
-import logo from '../img/logo.png';
+import logo from '../img/earth.png';
 
 const contentMsg = `
   <h1>Hi, Nice to meet you.</h1>
