@@ -8,6 +8,7 @@ const checkHeight = () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 };
 const root = document.querySelector('#root');
+const statusCode = 503;
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height
   checkHeight();
@@ -34,11 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.href.length
           ),
           routes,
-          routeTitles
+          routeTitles,
+          statusCode
         );
       }
       return;
     }
   });
-  router(root, window.location.pathname, routes, routeTitles);
+  router(root, window.location.pathname, routes, routeTitles, statusCode);
 });

@@ -13,7 +13,7 @@ import { jsSpa } from '../posts/jsSpa.js';
 import { toMe } from '../posts/toMe.js';
 import { whatIsDeveloper } from '../posts/whatIsDeveloper.js';
 import { coronaDiary } from '../posts/coronaDiary.js';
-
+import { serviceUnavailable } from '../routes/serviceUnavailable.js'
 export const routes = {
   '/': home,
   '/menu': menu,
@@ -30,6 +30,7 @@ export const routes = {
   '/to-me': toMe,
   '/what-is-developer': whatIsDeveloper,
   '/corona-diary': coronaDiary,
+  '/503': serviceUnavailable,
 };
 
 export const routeTitles = {
@@ -47,4 +48,5 @@ export const routeTitles = {
   '/to-me': '나에게.',
   '/what-is-developer': '개발자란 무엇일까?',
   '/corona-diary': '코로나 일지',
+  '/503': '503 Service Unavailable'
 };

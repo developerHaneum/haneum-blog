@@ -1,5 +1,23 @@
-export const router = (target, path, routes, routeTitles) => {
-  console.log();
+export const router = (target, path, routes, routeTitles, statusCode = 200) => {
+  if (statusCode === 503) {
+    document.title = routeTitles['/503'];
+      document
+        .querySelector('meta[property="og:title"]')
+        .setAttribute('content', `${routeTitles['/404']}`);
+      document
+        .querySelector('meta[property="og:url"]')
+        .setAttribute(
+          'content',
+          `${window.location.protocol}//${window.location.host}${
+            window.location.pathname === '/' ? '' : window.location.pathname
+          }`
+        );
+      document
+        .querySelector('meta[property="og:description"]')
+        .setAttribute('content', `${routeTitles['/503']}`);
+      target.innerHTML = routes['/503']();
+    return;
+  }
   if (path === window.location.pathname) {
   } else {
     window.history.pushState(null, null, window.location.origin + path);
