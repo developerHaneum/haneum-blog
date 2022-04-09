@@ -1,4 +1,5 @@
 import { postMaker } from '../components/postMaker.js';
+import logo from '../img/logo.png';
 
 const contentMsg = `
   <h1>Hi, Nice to meet you.</h1>
@@ -17,4 +18,4 @@ const contentMsg = `
   <br/>
   <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
 `;
-export const introduce = () => postMaker(contentMsg);
+export const home = () => postMaker(contentMsg);

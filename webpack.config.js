@@ -32,6 +32,14 @@ module.exports = {
           'css-loader',
         ],
       },
+      {
+        test: /\.png$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]',
+          limit: 20000,
+        },
+      },
     ],
   },
   plugins: [

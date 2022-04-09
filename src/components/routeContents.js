@@ -1,4 +1,4 @@
-import { introduce } from '../posts/introduce.js';
+import { home } from '../routes/home.js';
 import { menu } from '../routes/menu.js';
 import { notFoundPage } from '../routes/notFoundPage.js';
 import { fpBasics } from '../posts/fpBasics.js';
@@ -15,7 +15,7 @@ import { whatIsDeveloper } from '../posts/whatIsDeveloper.js';
 import { coronaDiary } from '../posts/coronaDiary.js';
 
 export const routes = {
-  '/': introduce,
+  '/': home,
   '/menu': menu,
   '/404': notFoundPage,
   '/fp-basics': fpBasics,
