@@ -26,7 +26,7 @@ export const router = (target, path, routes, routeTitles) => {
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute('content', `${routeTitles['/404']}`);
-      target.innerHTML = routes['/404']();
+      target.insertAdjacentHTML('afterbegin', routes['/404']());
     }
     return;
   }
@@ -57,7 +57,7 @@ export const router = (target, path, routes, routeTitles) => {
       }`
     );
   // Rendering
-  target.innerHTML = routes[path]();
+  target.insertAdjacentHTML('afterbegin', routes[path]());
   window.onpopstate = e => {
     // go, back surveillance
     if (!routes[window.location.pathname]) {
@@ -77,7 +77,7 @@ export const router = (target, path, routes, routeTitles) => {
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute('content', `${routeTitles['/404']}`);
-      target.innerHTML = routes['/404']();
+      target.insertAdjacentHTML('afterbegin', routes['/404']());
       return;
     }
     if (!routeTitles[window.location.pathname]) {
@@ -114,6 +114,6 @@ export const router = (target, path, routes, routeTitles) => {
         }`
       );
     // Rendering
-    target.innerHTML = routes[window.location.pathname]();
+    target.insertAdjacentHTML('afterbegin', routes[window.location.pathname]());
   };
 };
