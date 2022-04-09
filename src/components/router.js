@@ -1,6 +1,3 @@
-import { routes } from '../components/routeContents.js';
-import { routeTitles } from '../components/routeContents.js';
-
 export const router = (target, path, routes, routeTitles) => {
   console.log();
   if (path === window.location.pathname) {
