@@ -7,3 +7,7 @@ export const postMaker = contentMsg => {
     ${content(contentMsg)}
   `;
 };
+
+// <div class="wrapper">
+//   <aside class="aside"></aside>
+// </div>;

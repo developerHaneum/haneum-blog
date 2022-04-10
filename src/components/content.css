@@ -1,3 +1,29 @@
+/* .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 400;
+    height: calc(var(--vh, 1vh) * 100 - 61px);
+    width: 262.5px;
+    border-right: 1px solid lightgray;
+} */
+/* .aside-content {
+    width: 225px;
+    height: calc(var(--vh, 1vh) * 100 - 80px);
+}
+.aside-title {
+    cursor: pointer;
+    display: block;
+    word-wrap: break-word;
+    margin: 0 0 9.75px 0;
+}
+.aside-item {
+    cursor: pointer;
+    display: block;
+    word-wrap: break-word;
+    margin: 0 0 9.75px 9.75px;
+} */
 .content {
     padding: 1vh 1vh 1vh 1vh;
     box-sizing: border-box;

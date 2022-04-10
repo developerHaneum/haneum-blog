@@ -1,23 +1,4 @@
-export const router = (target, path, routes, routeTitles, statusCode = 200) => {
-  if (statusCode === 503) {
-    document.title = routeTitles['/503'];
-      document
-        .querySelector('meta[property="og:title"]')
-        .setAttribute('content', `${routeTitles['/404']}`);
-      document
-        .querySelector('meta[property="og:url"]')
-        .setAttribute(
-          'content',
-          `${window.location.protocol}//${window.location.host}${
-            window.location.pathname === '/' ? '' : window.location.pathname
-          }`
-        );
-      document
-        .querySelector('meta[property="og:description"]')
-        .setAttribute('content', `${routeTitles['/503']}`);
-      target.innerHTML = routes['/503']();
-    return;
-  }
+export const router = (target, path, routes, routeTitles) => {
   if (path === window.location.pathname) {
   } else {
     window.history.pushState(null, null, window.location.origin + path);
@@ -41,7 +22,8 @@ export const router = (target, path, routes, routeTitles, statusCode = 200) => {
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute('content', `${routeTitles['/404']}`);
-      target.innerHTML = routes['/404']();
+      target.innerHTML = ``;
+      target.insertAdjacentHTML('afterbegin', routes['/404']());
     }
     return;
   }
@@ -72,7 +54,8 @@ export const router = (target, path, routes, routeTitles, statusCode = 200) => {
       }`
     );
   // Rendering
-  target.innerHTML = routes[path]();
+  target.innerHTML = ``;
+  target.insertAdjacentHTML('afterbegin', routes[path]());
   window.onpopstate = e => {
     // go, back surveillance
     if (!routes[window.location.pathname]) {
@@ -92,7 +75,8 @@ export const router = (target, path, routes, routeTitles, statusCode = 200) => {
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute('content', `${routeTitles['/404']}`);
-      target.innerHTML = routes['/404']();
+      target.innerHTML = ``;
+      target.insertAdjacentHTML('afterbegin', routes['/404']());
       return;
     }
     if (!routeTitles[window.location.pathname]) {
@@ -129,6 +113,7 @@ export const router = (target, path, routes, routeTitles, statusCode = 200) => {
         }`
       );
     // Rendering
-    target.innerHTML = routes[window.location.pathname]();
+    target.innerHTML = ``;
+    target.insertAdjacentHTML('afterbegin', routes[window.location.pathname]());
   };
 };

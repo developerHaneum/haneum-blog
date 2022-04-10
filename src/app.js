@@ -2,13 +2,9 @@ import './reset.css';
 import './app.css';
 import { router } from './components/router.js';
 import { routes, routeTitles } from './components/routeContents.js';
+import { checkHeight } from './components/checkHeight.js';
 
-const checkHeight = () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-};
 const root = document.querySelector('#root');
-const statusCode = 503;
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height
   checkHeight();
@@ -35,12 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.href.length
           ),
           routes,
-          routeTitles,
-          statusCode
+          routeTitles
         );
       }
       return;
     }
   });
-  router(root, window.location.pathname, routes, routeTitles, statusCode);
+  router(root, window.location.pathname, routes, routeTitles);
 });

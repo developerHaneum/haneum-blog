@@ -18,3 +18,7 @@ body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
+a {
+    all: unset;
+    cursor: pointer;
+}
