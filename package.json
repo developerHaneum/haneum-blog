@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "NODE_ENV=production webpack",
-    "start": "open http://localhost:8080;node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "@babel/core": "^7.17.2",
