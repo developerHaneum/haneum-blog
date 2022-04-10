@@ -131,3 +131,4 @@ dist
 
 # etcs
 .DS_Store
+package-lock.json
