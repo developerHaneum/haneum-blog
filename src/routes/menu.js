@@ -10,8 +10,10 @@ const contentMsg = `
           <p><a href="/">Hi, Nice to meet you.</a></p>
           <p><a href="/devil-putin">Devil Putin.</a></p>
           <p><a href="/love-is">Love is.</a></p>
-          <p><a href="/plan">Plan.</a></p>
-          <p><a href="/march">March.</a></p>
+          <p><a href="/se">SE</a></p>
+          <p><a href="/what-should-i-do">What should I do.</a></p>
+          <p><a href="/what-is-developer">What is developer?</a></p>
+          <p><a href="/who-i-am">Who I am?</a></p>
         </li>
       </ul>
   </ul>
