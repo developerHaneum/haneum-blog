@@ -6,7 +6,9 @@ import { checkHeight } from './components/checkHeight.js';
 
 const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {
-  // For mobile height
+  // For mobile height (100vh)
+  checkHeight();
+  window.addEventListener('resize', () => checkHeight());
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {
       if (
@@ -36,6 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routes, routeTitles);
-  checkHeight();
-  window.addEventListener('resize', () => checkHeight());
 });
