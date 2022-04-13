@@ -4,8 +4,6 @@ import { router } from './components/router.js';
 import { routes, routeTitles } from './components/routeContents.js';
 import { checkHeight } from './components/checkHeight.js';
 
-let time;
-console.time(time);
 const root = document.querySelector('#root');
 const statusCode = 503;
 document.addEventListener('DOMContentLoaded', () => {
@@ -44,5 +42,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routes, routeTitles, statusCode);
-  console.timeEnd(time);
 });
