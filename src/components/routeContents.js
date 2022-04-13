@@ -26,7 +26,7 @@ export const routeTitles = {
   '/': 'Haneum Blog',
   '/menu': 'Menu',
   '/404': '404 Not found page',
-  '/503': '503 Service Unavailable',
+  '/503': '503 Service unavailable',
   '/devil-putin': 'Devil Putin.',
   '/love-is': 'Love is.',
   '/se': 'SE, I finally bought it.',

@@ -8,10 +8,8 @@ const root = document.querySelector('#root');
 const statusCode = 503;
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
-  if (!(statusCode === 503)) {
-    checkHeight();
-    window.addEventListener('resize', () => checkHeight());
-  }
+  checkHeight();
+  window.addEventListener('resize', () => checkHeight());
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {
       if (
