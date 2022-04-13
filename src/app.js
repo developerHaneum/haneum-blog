@@ -4,11 +4,16 @@ import { router } from './components/router.js';
 import { routes, routeTitles } from './components/routeContents.js';
 import { checkHeight } from './components/checkHeight.js';
 
+let time;
+console.time(time);
 const root = document.querySelector('#root');
+const statusCode = 503;
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
-  checkHeight();
-  window.addEventListener('resize', () => checkHeight());
+  if (!(statusCode === 503)) {
+    checkHeight();
+    window.addEventListener('resize', () => checkHeight());
+  }
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {
       if (
@@ -31,11 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.href.length
           ),
           routes,
-          routeTitles
+          routeTitles,
+          statusCode
         );
       }
       return;
     }
   });
-  router(root, window.location.pathname, routes, routeTitles);
+  router(root, window.location.pathname, routes, routeTitles, statusCode);
+  console.timeEnd(time);
 });

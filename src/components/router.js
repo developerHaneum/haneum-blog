@@ -1,7 +1,13 @@
-export const router = (target, path, routes, routeTitles) => {
+export const router = (target, path, routes, routeTitles, statusCode) => {
   if (path === window.location.pathname) {
   } else {
     window.history.pushState(null, null, window.location.origin + path);
+  }
+  if (statusCode === 503) {
+    document.title = routeTitles['/503'];
+    target.innerHTML = ``;
+    target.insertAdjacentHTML('afterbegin', routes['/503']());
+    return;
   }
   if (!routes[path]) {
     if (path === '/') {
