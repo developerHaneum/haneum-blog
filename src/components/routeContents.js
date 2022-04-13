@@ -8,6 +8,7 @@ import { whatShouldIDo } from '../posts/whatShouldIDo';
 import { whatIsDeveloper } from '../posts/whatIsDeveloper.js';
 import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { whoIAM } from '../posts/whoIAm.js';
+import { myAnalects } from '../posts/myAnalects';
 
 export const routes = {
   '/': home,
@@ -20,6 +21,7 @@ export const routes = {
   '/what-should-i-do': whatShouldIDo,
   '/what-is-developer': whatIsDeveloper,
   '/who-i-am': whoIAM,
+  '/analects': myAnalects,
 };
 
 export const routeTitles = {
@@ -32,4 +34,5 @@ export const routeTitles = {
   '/se': 'SE, I finally bought it.',
   '/what-is-developer': 'What is developer?',
   '/who-i-am': 'Who I am?',
+  '/analects': 'My analects',
 };

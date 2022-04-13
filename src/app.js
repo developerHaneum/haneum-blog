@@ -5,7 +5,7 @@ import { routes, routeTitles } from './components/routeContents.js';
 import { checkHeight } from './components/checkHeight.js';
 
 const root = document.querySelector('#root');
-const statusCode = 503;
+const statusCode = 200;
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
   checkHeight();
