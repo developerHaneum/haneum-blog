@@ -30,8 +30,7 @@
 }
 .content p {
     font-size: 3vh;
-    margin-top: 0.4625vh;
-    margin-bottom: 0.4625vh;
+    line-height: 3.4625vh;
 }
 .content br {
     padding-top: 3.4625vh;
