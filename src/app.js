@@ -5,7 +5,6 @@ import { routes, routeTitles } from './components/routeContents.js';
 import { checkHeight } from './components/checkHeight.js';
 
 const root = document.querySelector('#root');
-const statusCode = 200;
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
   checkHeight();
@@ -32,12 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.href.length
           ),
           routes,
-          routeTitles,
-          statusCode
+          routeTitles
         );
       }
       return;
     }
   });
-  router(root, window.location.pathname, routes, routeTitles, statusCode);
+  router(root, window.location.pathname, routes, routeTitles);
 });

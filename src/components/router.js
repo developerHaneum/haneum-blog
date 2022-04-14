@@ -1,19 +1,27 @@
-export const router = (target, path, routes, routeTitles, statusCode) => {
+export const router = (target, path, routes, routeTitles) => {
   if (path === window.location.pathname) {
   } else {
     window.history.pushState(null, null, window.location.origin + path);
-  }
-  if (statusCode === 503) {
-    document.title = routeTitles['/503'];
-    target.innerHTML = ``;
-    target.insertAdjacentHTML('afterbegin', routes['/503']());
-    return;
   }
   if (!routes[path]) {
     if (path === '/') {
     } else {
       // 404
       document.title = routeTitles['/404'];
+      document
+        .querySelector('meta[property="og:title"]')
+        .setAttribute('content', `${routeTitles['/404']}`);
+      document
+        .querySelector('meta[property="og:url"]')
+        .setAttribute(
+          'content',
+          `${window.location.protocol}//${window.location.host}${
+            window.location.pathname === '/' ? '' : window.location.pathname
+          }`
+        );
+      document
+        .querySelector('meta[property="og:description"]')
+        .setAttribute('content', `${routeTitles['/404']}`);
       target.innerHTML = ``;
       target.insertAdjacentHTML('afterbegin', routes['/404']());
     }
@@ -22,9 +30,29 @@ export const router = (target, path, routes, routeTitles, statusCode) => {
   if (!routeTitles[path]) {
     // Do not exist title
     document.title = 'Haneum Blog';
+    document
+      .querySelector('meta[property="og:title"]')
+      .setAttribute('content', 'Haneum Blog');
+    document
+      .querySelector('meta[property="og:description"]')
+      .setAttribute('content', 'Haneum Blog');
   } else {
     document.title = routeTitles[path];
+    document
+      .querySelector('meta[property="og:title"]')
+      .setAttribute('content', `${routeTitles[`${window.location.pathname}`]}`);
+    document
+      .querySelector('meta[property="og:description"]')
+      .setAttribute('content', `${routeTitles[`${window.location.pathname}`]}`);
   }
+  document
+    .querySelector('meta[property="og:url"]')
+    .setAttribute(
+      'content',
+      `${window.location.protocol}//${window.location.host}${
+        window.location.pathname === '/' ? '' : window.location.pathname
+      }`
+    );
   // Rendering
   target.innerHTML = ``;
   target.insertAdjacentHTML('afterbegin', routes[path]());
@@ -33,6 +61,20 @@ export const router = (target, path, routes, routeTitles, statusCode) => {
     if (!routes[window.location.pathname]) {
       // 404
       document.title = routeTitles['/404'];
+      document
+        .querySelector('meta[property="og:title"]')
+        .setAttribute('content', `${routeTitles['/404']}`);
+      document
+        .querySelector('meta[property="og:url"]')
+        .setAttribute(
+          'content',
+          `${window.location.protocol}//${window.location.host}${
+            window.location.pathname === '/' ? '' : window.location.pathname
+          }`
+        );
+      document
+        .querySelector('meta[property="og:description"]')
+        .setAttribute('content', `${routeTitles['/404']}`);
       target.innerHTML = ``;
       target.insertAdjacentHTML('afterbegin', routes['/404']());
       return;
@@ -40,10 +82,36 @@ export const router = (target, path, routes, routeTitles, statusCode) => {
     if (!routeTitles[window.location.pathname]) {
       // Do not exist title
       document.title = 'Haneum Blog';
+      document
+        .querySelector('meta[property="og:title"]')
+        .setAttribute('content', 'Haneum Blog');
+      document
+        .querySelector('meta[property="og:description"]')
+        .setAttribute('content', 'Haneum Blog');
     } else {
-      // If exist title
+      // Exist title
       document.title = routeTitles[window.location.pathname];
+      document
+        .querySelector('meta[property="og:title"]')
+        .setAttribute(
+          'content',
+          `${routeTitles[`${window.location.pathname}`]}`
+        );
+      document
+        .querySelector('meta[property="og:description"]')
+        .setAttribute(
+          'content',
+          `${routeTitles[`${window.location.pathname}`]}`
+        );
     }
+    document
+      .querySelector('meta[property="og:url"]')
+      .setAttribute(
+        'content',
+        `${window.location.protocol}//${window.location.host}${
+          window.location.pathname === '/' ? '' : window.location.pathname
+        }`
+      );
     // Rendering
     target.innerHTML = ``;
     target.insertAdjacentHTML('afterbegin', routes[window.location.pathname]());
