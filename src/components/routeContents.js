@@ -10,29 +10,16 @@ import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { whoIAM } from '../posts/whoIAm.js';
 import { myAnalects } from '../posts/myAnalects';
 
-export const routes = {
-  '/': home,
-  '/menu': menu,
-  '/404': notFoundPage,
-  '/503': serviceUnavailable,
-  '/devil-putin': devilPutin,
-  '/love-is': loveIs,
-  '/se': se,
-  '/what-should-i-do': whatShouldIDo,
-  '/what-is-developer': whatIsDeveloper,
-  '/who-i-am': whoIAM,
-  '/analects': myAnalects,
-};
-
-export const routeTitles = {
-  '/': 'Haneum Blog',
-  '/menu': 'Menu',
-  '/404': '404 Not found page',
-  '/503': '503 Service unavailable',
-  '/devil-putin': 'Devil Putin.',
-  '/love-is': 'Love is.',
-  '/se': 'SE, I finally bought it.',
-  '/what-is-developer': 'What is developer?',
-  '/who-i-am': 'Who I am?',
-  '/analects': 'My analects',
+export const routeContents = {
+  '/': [home, 'Haneum Blog'],
+  '/menu': [menu, 'Menu'],
+  '/404': [notFoundPage, '404 Not found page'],
+  '/503': [serviceUnavailable, '503 Service unavailable'],
+  '/devil-putin': [devilPutin, 'Devil Putin.'],
+  '/love-is': [loveIs, 'Love is.'],
+  '/se': [se, 'SE, I finally bought it.'],
+  '/what-should-i-do': [whatShouldIDo, 'What should I do?'],
+  '/what-is-developer': [whatIsDeveloper, 'What is developer?'],
+  '/who-i-am': [whoIAM, 'Who I am?'],
+  '/analects': [myAnalects, 'My analects.'],
 };
