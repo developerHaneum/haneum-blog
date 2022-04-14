@@ -8,8 +8,6 @@ const contentMsg = `
   <p>I develop web applications using basic JavaScript and Express.js.</p>
   <p>However, sometimes I also develop web applications with React.js and React.js packages.</p>
   <br/>
-  <p>And occasionally I create and use command line programs in Python.</p>
-  <br/>
   <p>I always attach great importance to web accessibility and simple and intuitive web development.</p>
   <p>I also dream of a web world where anyone from kindergarteners to the elderly can use it.</p>
   </p>
