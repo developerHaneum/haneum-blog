@@ -2,7 +2,9 @@ import './header.css';
 
 export const header = () => `
     <header class="header">
-        <a class="header-menu" href="/menu">Menu</a>
-        <a class="header-title" href="/">Haneum Blog</a>
+        <menu class="header-menu"><a href="/menu">Menu</a></menu>
+        <div class="header-title">
+            <a href="/">Haneum Blog</a>
+        </div>
     </header>
 `;

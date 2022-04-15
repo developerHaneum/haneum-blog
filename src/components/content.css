@@ -1,7 +1,7 @@
 .content {
-    padding: 6px;
+    padding: 1vh 1vh 1vh 1vh;
     box-sizing: border-box;
-    height: calc(var(--vh, 1vh) * 100 - 32.75px);
+    height: calc(var(--vh, 1vh) * 100 - 5.25vh);
     overflow: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -19,37 +19,30 @@
     }
 }
 .content h1 {
-    font-size: 22.25px;
     font-weight: 500;
-    margin-bottom: 17px;
+    font-size: 3.4vh;
+    margin-bottom: 2.675vh;
 }
 .content h2 {
-    font-size: 21.75px;
     font-weight: 500;
-    margin-bottom: 17.5px;
+    font-size: 3.2vh;
+    margin-bottom: 2.7vh;
 }
 .content p {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 3vh;
+    line-height: 3.4625vh;
 }
 .content br {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 3.4625vh;
+    padding-bottom: 3.4625vh;
 }
 .content a {
     all: unset;
     cursor: pointer;
     color: royalblue;
 }
-@media (hover: hover) {
-    .content a:hover {
-        text-decoration: underline;
-    }
-}
-@media (hover: none) {
-    .content a:active {
-        text-decoration: underline;
-    }
+.content a:hover {
+    text-decoration: underline;
 }
 .content b {
     font-weight: 600;
@@ -74,8 +67,8 @@
     display: inline-block;
 }
 .content .second-list {
-    margin-left: 17px;
+    margin-left: 2.7vh;
 }
 .content .third-list {
-    margin-left: 20px;
+    margin-left: 3vh;
 }
