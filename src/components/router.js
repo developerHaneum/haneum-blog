@@ -1,3 +1,5 @@
+import { render } from './render.js';
+
 export const router = (target, path, routeContents) => {
   if (path === window.location.pathname) {
   } else {
@@ -22,8 +24,7 @@ export const router = (target, path, routeContents) => {
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute('content', `${routeContents['/404'].title}`);
-      target.innerHTML = ``;
-      target.insertAdjacentHTML('afterbegin', routeContents['/404'].route());
+      render(target, '/404');
     }
     return;
   }
@@ -60,9 +61,8 @@ export const router = (target, path, routeContents) => {
       }`
     );
   // Rendering
-  target.innerHTML = ``;
-  target.insertAdjacentHTML('afterbegin', routeContents[path].route());
-  window.onpopstate = e => {
+  render(target, path);
+  window.onpopstate = () => {
     // go, back surveillance
     if (!routeContents[window.location.pathname]) {
       // 404
@@ -81,8 +81,7 @@ export const router = (target, path, routeContents) => {
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute('content', `${routeContents['/404'].title}`);
-      target.innerHTML = ``;
-      target.insertAdjacentHTML('afterbegin', routeContents['/404'].route());
+      render(target, '/404');
       return;
     }
     if (!routeContents[window.location.pathname].title) {
@@ -119,10 +118,6 @@ export const router = (target, path, routeContents) => {
         }`
       );
     // Rendering
-    target.innerHTML = ``;
-    target.insertAdjacentHTML(
-      'afterbegin',
-      routeContents[window.location.pathname].route()
-    );
+    render(target, window.location.pathname);
   };
 };
