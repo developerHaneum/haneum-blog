@@ -3,9 +3,8 @@ import './app.css';
 import { router } from './components/router.js';
 import { routeContents } from './components/routeContents.js';
 import { checkHeight } from './components/checkHeight.js';
-import { header } from './components/header.js';
-const root = document.querySelector('#root');
 
+const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
   checkHeight();
@@ -38,5 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routeContents);
-  console.timeEnd(time);
 });
