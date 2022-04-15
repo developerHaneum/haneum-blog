@@ -1,7 +1,7 @@
 .content {
-    padding: 1vh 1vh 1vh 1vh;
+    padding: 6px;
     box-sizing: border-box;
-    height: calc(var(--vh, 1vh) * 100 - 4.75vh);
+    height: calc(var(--vh, 1vh) * 100 - 32px);
     overflow: auto;
 }
 @media (prefers-color-scheme: light) {
@@ -19,22 +19,22 @@
     }
 }
 .content h1 {
+    font-size: 22.25px;
     font-weight: 500;
-    font-size: 3.4vh;
-    margin-bottom: 2.675vh;
+    margin-bottom: 17px;
 }
 .content h2 {
+    font-size: 21.75px;
     font-weight: 500;
-    font-size: 3.2vh;
-    margin-bottom: 2.7vh;
+    margin-bottom: 17.5px;
 }
 .content p {
-    font-size: 3vh;
-    line-height: 3.4625vh;
+    font-size: 20px;
+    line-height: 22px;
 }
 .content br {
-    padding-top: 3.4625vh;
-    padding-bottom: 3.4625vh;
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 .content a {
     all: unset;
@@ -74,8 +74,8 @@
     display: inline-block;
 }
 .content .second-list {
-    margin-left: 2.7vh;
+    margin-left: 17px;
 }
 .content .third-list {
-    margin-left: 3vh;
+    margin-left: 20px;
 }

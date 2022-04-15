@@ -1,47 +1,41 @@
 .header {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 4.75vh;
+    height: 30px;
+    font-size: 22.5px;
     font-weight: 600;
-    box-sizing: border-box;
-    font-size: 3.5vh;
 }
 @media (prefers-color-scheme: light) {
     .header {
         border: black solid 1.375px;
     }
+}
+@media (prefers-color-scheme: dark) {
+    .header {
+        border: white solid 1.375px;
+    }
+}
+.header-menu {
+    all: unset;
+    padding: 3px 6px 3px 6px;
+}
+@media (prefers-color-scheme: light) {
     .header-menu {
         border-right: black solid 1.375px;
     }
 }
 @media (prefers-color-scheme: dark) {
-    .header {
-        border: white solid 1.365px;
-    }
     .header-menu {
         border-right: white solid 1.375px;
     }
 }
+.header-menu:hover {
+    color: royalblue;
+}
 .header-title {
-    padding: 0.5vh 1vh 0.5vh 1vh;
-}
-.header-title a {
     all: unset;
-    cursor: pointer;
+    padding: 3px 6px 3px 6px;
 }
-.header-menu {
-    padding: 0.5vh 1vh 0.5vh 1vh;
-}
-.header-menu a {
-    all: unset;
-    cursor: pointer;
-}
-@media (hover: hover) {
-    .header-title a:hover {
-        color: royalblue;
-    }
-    .header-menu a:hover {
-        color: royalblue;
-    }
+.header-title:hover {
+    color: royalblue;
 }
