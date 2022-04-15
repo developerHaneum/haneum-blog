@@ -7,10 +7,10 @@ export const router = (target, path, routeContents) => {
     if (path === '/') {
     } else {
       // 404
-      document.title = routeContents['/404'][1];
+      document.title = routeContents['/404'].title;
       document
         .querySelector('meta[property="og:title"]')
-        .setAttribute('content', `${routeContents['/404'][1]}`);
+        .setAttribute('content', `${routeContents['/404'].title}`);
       document
         .querySelector('meta[property="og:url"]')
         .setAttribute(
@@ -21,13 +21,13 @@ export const router = (target, path, routeContents) => {
         );
       document
         .querySelector('meta[property="og:description"]')
-        .setAttribute('content', `${routeContents['/404'][1]}`);
+        .setAttribute('content', `${routeContents['/404'].title}`);
       target.innerHTML = ``;
-      target.insertAdjacentHTML('afterbegin', routeContents['/404'][0]());
+      target.insertAdjacentHTML('afterbegin', routeContents['/404'].route());
     }
     return;
   }
-  if (!routeContents[path][1]) {
+  if (!routeContents[path].title) {
     // Do not exist title
     document.title = 'Haneum Blog';
     document
@@ -37,18 +37,18 @@ export const router = (target, path, routeContents) => {
       .querySelector('meta[property="og:description"]')
       .setAttribute('content', 'Haneum Blog');
   } else {
-    document.title = routeContents[path][1];
+    document.title = routeContents[path].title;
     document
       .querySelector('meta[property="og:title"]')
       .setAttribute(
         'content',
-        `${routeContents[`${window.location.pathname}`][1]}`
+        `${routeContents[`${window.location.pathname}`].title}`
       );
     document
       .querySelector('meta[property="og:description"]')
       .setAttribute(
         'content',
-        `${routeContents[`${window.location.pathname}`][1]}`
+        `${routeContents[`${window.location.pathname}`].title}`
       );
   }
   document
@@ -61,15 +61,15 @@ export const router = (target, path, routeContents) => {
     );
   // Rendering
   target.innerHTML = ``;
-  target.insertAdjacentHTML('afterbegin', routeContents[path][0]());
+  target.insertAdjacentHTML('afterbegin', routeContents[path].route());
   window.onpopstate = e => {
     // go, back surveillance
     if (!routeContents[window.location.pathname]) {
       // 404
-      document.title = routeContents['/404'][1];
+      document.title = routeContents['/404'].title;
       document
         .querySelector('meta[property="og:title"]')
-        .setAttribute('content', `${routeContents['/404'][1]}`);
+        .setAttribute('content', `${routeContents['/404'].title}`);
       document
         .querySelector('meta[property="og:url"]')
         .setAttribute(
@@ -80,12 +80,12 @@ export const router = (target, path, routeContents) => {
         );
       document
         .querySelector('meta[property="og:description"]')
-        .setAttribute('content', `${routeContents['/404'][1]}`);
+        .setAttribute('content', `${routeContents['/404'].title}`);
       target.innerHTML = ``;
-      target.insertAdjacentHTML('afterbegin', routeContents['/404'][0]());
+      target.insertAdjacentHTML('afterbegin', routeContents['/404'].route());
       return;
     }
-    if (!routeContents[window.location.pathname][1]) {
+    if (!routeContents[window.location.pathname].title) {
       // Do not exist title
       document.title = 'Haneum Blog';
       document
@@ -96,18 +96,18 @@ export const router = (target, path, routeContents) => {
         .setAttribute('content', 'Haneum Blog');
     } else {
       // Exist title
-      document.title = routeContents[window.location.pathname][1];
+      document.title = routeContents[window.location.pathname].title;
       document
         .querySelector('meta[property="og:title"]')
         .setAttribute(
           'content',
-          `${routeContents[`${window.location.pathname}`][1]}`
+          `${routeContents[`${window.location.pathname}`].title}`
         );
       document
         .querySelector('meta[property="og:description"]')
         .setAttribute(
           'content',
-          `${routeContents[`${window.location.pathname}`][1]}`
+          `${routeContents[`${window.location.pathname}`].title}`
         );
     }
     document
@@ -122,7 +122,7 @@ export const router = (target, path, routeContents) => {
     target.innerHTML = ``;
     target.insertAdjacentHTML(
       'afterbegin',
-      routeContents[window.location.pathname][0]()
+      routeContents[window.location.pathname].route()
     );
   };
 };

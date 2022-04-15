@@ -4,8 +4,6 @@ import { router } from './components/router.js';
 import { routeContents } from './components/routeContents.js';
 import { checkHeight } from './components/checkHeight.js';
 
-let time;
-console.time(time);
 const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
@@ -19,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.target.href.indexOf('/', 8),
             e.target.href.length
           )
-        ][0] ===
+        ] ===
           undefined) ===
           false) ===
         true
@@ -39,5 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
   router(root, window.location.pathname, routeContents);
-  console.timeEnd(time);
 });
