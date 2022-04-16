@@ -1,7 +1,6 @@
 import { postMaker } from '../components/postMaker.js';
-import myFace from '../imgs/my-face.png';
+
 const contentMsg = `
-  <img src="${myFace}" alt="young man wearing a hoodie"/>
   <h1 id="hello">Hi, Nice to meet you.</h1>
   <p>My name is Cha Haneum and I am Korean.</p>
   <p>And My job is Front-end developer.</p>
