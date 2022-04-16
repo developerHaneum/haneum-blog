@@ -1,6 +1,7 @@
 import { postMaker } from '../components/postMaker.js';
-
+import myFace from '../imgs/my-face.png';
 const contentMsg = `
+  <img src="${myFace}" alt="young man wearing a hoodie"/>
   <h1 id="hello">Hi, Nice to meet you.</h1>
   <p>My name is Cha Haneum and I am Korean.</p>
   <p>And My job is Front-end developer.</p>
@@ -14,6 +15,8 @@ const contentMsg = `
   <br/>
   <p>If you are curious about my web application or information, please check <a href="https://github.com/chebread">GitHub</a> or send an <a href="mailto:chahaneum@icloud.com">email</a>.</p>
   <p>Also, to check more blog posts, click <a href="/menu">the Menu link</a> at the top or access <a href="/menu">/menu</a>.</p>
+  <br/>
+  <p>Also, if you'd like to see a cleanup of my front-end skills, see <a href="https://haneum.notion.site/Front-end-technologies-be5a30d863f34d4d87a528f6abf48e8c">my Notion.</a></p>
   <br/>
   <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
 `;
