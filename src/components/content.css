@@ -1,17 +1,16 @@
 .content {
     padding: 1vh 1vh 1vh 1vh;
     box-sizing: border-box;
-    height: calc(var(--vh, 1vh) * 100 - 5.25vh);
     overflow: auto;
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
     .content {
         border-left: black solid 1.375px;
         border-right: black solid 1.375px;
         border-bottom: black solid 1.375px;
     }
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
     .content {
         border-left: white solid 1.375px;
         border-right: white solid 1.375px;

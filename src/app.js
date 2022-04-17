@@ -2,13 +2,10 @@ import './reset.css';
 import './app.css';
 import { router } from './components/router.js';
 import { routeContents } from './components/routeContents.js';
-import { onHeight } from './components/onHeight.js';
 
 const root = document.querySelector('#root');
 document.addEventListener('DOMContentLoaded', () => {
   // For mobile height (100vh)
-  onHeight();
-  window.addEventListener('resize', () => onHeight());
   document.body.addEventListener('click', e => {
     if (e.target.localName === 'a') {
       if (
