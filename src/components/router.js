@@ -5,9 +5,9 @@ export const router = path => {
   if (!(path === window.location.pathname)) {
     window.history.pushState(null, null, window.location.origin + path);
   }
+  // 503
   renderRoute('/503');
   return;
-  // 503
   if (!routeContents[path]) {
     if (!(path === '/')) {
       renderRoute('/404');
