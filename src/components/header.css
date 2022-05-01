@@ -1,4 +1,4 @@
-.header {
+/* .header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,18 +28,14 @@
 }
 .header-title a {
     all: unset;
-    cursor: pointer;
+    cursor: text;
 }
-.header-title a:hover {
-    color: royalblue;
-}
+
 .header-menu {
     padding: 0.75vh 1vh 0.75vh 1vh;
 }
 .header-menu a {
     all: unset;
-    cursor: pointer;
+    cursor: text;
 }
-.header-menu a:hover {
-    color: royalblue;
-}
+ */

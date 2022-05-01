@@ -4,7 +4,6 @@ const compiler = webpack(require('./webpack.config.js'));
 const path = require('path');
 const app = express();
 const nodeEnv = process.env.NODE_ENV || 'development';
-
 app.use(
   require('webpack-dev-middleware')(compiler, {
     publicPath: require('./webpack.config.js').output.publicPath,

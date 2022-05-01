@@ -1,13 +1,40 @@
-import { postMaker } from '../components/postMaker';
+import { renderHTML } from '../components/renderHTML.js';
 
-const contentMsg = `
-    <h1>404 Not found page</h1>
-    <p>Sorry. Please click the link text above or access it from an address you know.</p>
-    <p>죄송합니다. 위의 링크 텍스트를 클릭하거나 알고 있는 주소로 접근하세요.</p>
-    <p>申し訳ありません。 上記のリンクテキストをクリックするか、既知のアドレスにアクセスしてください。</p>
-    <p>Verzeihung. Bitte klicken Sie oben auf den Linktext oder greifen Sie von einer Ihnen bekannten Adresse darauf zu.</p>
-    <p>Pardon. Cliquez sur le texte du lien ci-dessus ou accédez à une adresse connue.</p>
-    <br/>
-    <p>MIT License &copy; ${new Date().getFullYear()} Cha Haneum</p>
-`;
-export const notFoundPage = () => postMaker(contentMsg);
+export const notFoundPage = () => {
+  const render = () => {
+    const contentMsg = `
+      <div class="nfp-content">
+        <div class="nfp-content-wrapper">
+          <div class="nfp-content-msg">
+            <p>404 Not found page.</p>
+            <p>Sorry. Do you want <a href="/">to go the first route</a>?</p>
+          </div>
+      </div>
+    `;
+    renderHTML(contentMsg, document.querySelector('#root'));
+    if ('ontouchstart' in document.documentElement) {
+      document
+        .querySelector('.nfp-content-msg a')
+        .addEventListener('touchstart', e => {
+          e.target.style.textDecoration = 'underline';
+        });
+      document
+        .querySelector('.nfp-content-msg a')
+        .addEventListener('touchend', e => {
+          e.target.style.textDecoration = '';
+        });
+    } else {
+      document
+        .querySelector('.nfp-content-msg a')
+        .addEventListener('mouseover', e => {
+          e.target.style.textDecoration = 'underline';
+        });
+      document
+        .querySelector('.nfp-content-msg a')
+        .addEventListener('mouseleave', e => {
+          e.target.style.textDecoration = '';
+        });
+    }
+  };
+  render();
+};

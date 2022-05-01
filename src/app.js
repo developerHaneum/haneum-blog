@@ -3,10 +3,10 @@ import './app.css';
 import { router } from './components/router.js';
 import { routeContents } from './components/routeContents.js';
 
-const root = document.querySelector('#root');
+router(window.location.pathname);
 document.addEventListener('DOMContentLoaded', () => {
   document.body.addEventListener('click', e => {
-    if (e.target.localName === 'a') {
+    if (e.target.tagName === 'A') {
       if (
         ((routeContents[
           e.target.href.substring(
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
       ) {
         e.preventDefault();
         router(
-          root,
           e.target.href.substring(
             e.target.href.indexOf('/', 8),
             e.target.href.length
@@ -30,5 +29,4 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
   });
-  router(root, window.location.pathname);
 });
