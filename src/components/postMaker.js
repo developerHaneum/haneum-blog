@@ -4,10 +4,10 @@ import { renderHTML } from './renderHTML.js';
 
 export const postMaker = contentMsg => {
   const render = () => {
-    const htmlContent = `
+    const contents = `
       ${content(contentMsg)}
     `;
-    renderHTML(htmlContent, document.querySelector('#root'));
+    renderHTML(contents, document.querySelector('#root'));
     document.querySelectorAll('a').forEach(item => {
       item.addEventListener('mouseover', e => {
         if (e.target.parentNode.className === 'content-title') {
