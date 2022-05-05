@@ -4,11 +4,16 @@ import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { devilPutin } from '../posts/devilPutin.js';
 import { loveIs } from '../posts/loveIs.js';
 import { se } from '../posts/se.js';
+import { feed } from '../routes/feed.js';
 
 export const routeContents = {
   '/': {
     route: home,
-    title: 'Haneum Blog',
+    title: '',
+  },
+  '/feed': {
+    route: feed,
+    title: 'Feed',
   },
   '/404': {
     route: notFoundPage,

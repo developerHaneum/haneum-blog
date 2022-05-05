@@ -1,0 +1,18 @@
+.nfp-container {
+  display: block;
+}
+.nfp-container-wrapper {
+  padding: 5px;
+}
+.nfp-container-content {
+  font-size: 16px;
+  word-wrap: break-word;
+}
+.nfp-container-content p {
+  line-height: 16px;
+}
+.nfp-container-content a {
+  all: unset;
+  cursor: text;
+  color: royalblue;
+}

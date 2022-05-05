@@ -1,0 +1,11 @@
+.feed-container {
+  display: block;
+}
+.feed-container-wrapper {
+  padding: 10px;
+}
+.feed-content-items a {
+  all: unset;
+  cursor: text;
+  color: royalblue
+}

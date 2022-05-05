@@ -1,10 +1,11 @@
 import './header.css';
 
 export const header = () => `
-    <header class="header">
-        <menu class="header-menu">Menu</menu>
-        <div class="header-title">
-            <a href="/">Haneum Blog</a>
-        </div>
-    </header>
+  <header class="header">
+    <div class="header-wrapper">
+      <nav class="header-navigator">
+        <a href="/">/</a> ${window.location.pathname}
+      </nav>
+    </div>
+  </header>
 `;
