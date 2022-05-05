@@ -8,6 +8,7 @@ import { feed } from '../routes/feed.js';
 import { motherfxxxer } from '../posts/motherfxxxer.js';
 import { myPlaylist } from '../posts/myPlaylist.js';
 import { about } from '../posts/about.js';
+import { childrensDay } from '../posts/childrensDay.js';
 
 export const routeContents = {
   '/': {
@@ -49,5 +50,9 @@ export const routeContents = {
   '/my-playlist': {
     route: myPlaylist,
     title: 'My playlist',
+  },
+  '/childrens-day': {
+    route: childrensDay,
+    title: "Children's Day",
   },
 };
