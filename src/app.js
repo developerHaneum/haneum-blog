@@ -1,5 +1,6 @@
 import './reset.css';
 import './app.css';
+import './routes/notFoundPage.css';
 import { router } from './components/router.js';
 import { routeContents } from './components/routeContents.js';
 

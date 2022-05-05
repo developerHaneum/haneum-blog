@@ -1,0 +1,27 @@
+.feed-container {
+  display: block;
+}
+.feed-container-wrapper {
+  margin: 10px;
+}
+.feed-container-content {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+}
+.feed-content-items a {
+  all: unset;
+  cursor: text;
+}
+@media (prefers-color-scheme: light) {
+  .feed-content-items {
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    color: white;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .feed-content-items {
+    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
+    color: black;
+  }
+}

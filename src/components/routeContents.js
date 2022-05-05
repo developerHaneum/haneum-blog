@@ -5,11 +5,18 @@ import { devilPutin } from '../posts/devilPutin.js';
 import { loveIs } from '../posts/loveIs.js';
 import { se } from '../posts/se.js';
 import { feed } from '../routes/feed.js';
+import { motherfxxxer } from '../posts/motherfxxxer.js';
+import { myPlaylist } from '../posts/myPlaylist.js';
+import { about } from '../posts/about.js';
 
 export const routeContents = {
   '/': {
     route: home,
-    title: '',
+    title: 'Haneum Blog',
+  },
+  '/about': {
+    route: about,
+    title: 'About Haneum.',
   },
   '/feed': {
     route: feed,
@@ -34,5 +41,13 @@ export const routeContents = {
   '/se': {
     route: se,
     title: 'SE, I finally bought it.',
+  },
+  '/motherfxxxer': {
+    route: motherfxxxer,
+    title: 'Motherfxxxer',
+  },
+  '/my-playlist': {
+    route: myPlaylist,
+    title: 'My playlist',
   },
 };

@@ -5,23 +5,20 @@
   margin: 10px;
 }
 .content-title {
-  display: block;
-  color: royalblue;
+  margin-bottom: 22.5px;
   font-size: 30px;
   line-height: 35px;
   font-weight: 600;
-  text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
-  margin-bottom: 22.5px;
 }
-.content-main {
-  display: block;
+.content-title a {
+  all: unset;
+  cursor: text;
 }
 .content-main p {
-  display: block;
+  margin-bottom: 18px;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
-  margin-bottom: 18px;
 }
 .content-main br {
   line-height: 23px;
@@ -38,9 +35,17 @@
   .content-main code {
     background-color: rgb(239, 241, 242);
   }
+  .content-title {
+    color: royalblue;
+    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+  }
 }
 @media (prefers-color-scheme: dark) {
   .content-main code {
     background-color: rgb(53, 57, 65);
+  }
+  .content-title {
+    color: black;
+    text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;
   }
 }

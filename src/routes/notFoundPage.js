@@ -1,4 +1,3 @@
-import './nfp-content.css';
 import { renderHTML } from '../components/renderHTML.js';
 
 export const notFoundPage = () => {
