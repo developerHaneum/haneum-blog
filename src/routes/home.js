@@ -3,15 +3,19 @@ import { postMaker } from '../components/postMaker.js';
 export const home = () => {
   const render = () => {
     const contentMsg = `
-      <p>My name is Cha Haneum and I am Korean.<br/>
-      And My job is Front-end developer.</p>
-      <p>I develop web applications using basic JavaScript and Express.js.<br/>
-      However, sometimes I also develop web applications with React.js and React.js packages.</p>
-      <p>I always attach great importance to web accessibility and simple and intuitive web development.</br>
-      I also dream of a web world where anyone from kindergarteners to the elderly can use it.</p>
-      <p>If you are curious about my web application or information, please check <a href="https://github.com/chebread">GitHub</a> or send an <a href="mailto:chahaneum@icloud.com">email</a>.</br>
-      You can also view more blog posts by clicking <a href="/feed">the blog posts title</a> (very easy), clicking <a href="/feed">/feed</a>, or typing <a href="/feed">/feed</a> after your domain.</p>
-      <p>For reference, Haneum <a href="/about">(About Haneum)</a> created this blog and writes on this blog.</p>
+      <p>Hello. My name is Cha Haneum (In Korean, it is written as 차한음).<br/>
+      I am Korean, I am doing front-end development.</p>
+      <p>I usually develop web applications using JavaScript and Express.js.</p>
+      <p>I take simple and intuitive web development very seriously.<br/>
+      It has to do with web accessibility and has a huge impact on UX.</p>
+      <p>Also, I dream of a web world where everyone from kindergarteners to the elderly can use.<br/>
+      This is my biggest goal and one of my challenges.</p>
+      <p>If you would like to see many posts from your blog,<br/>
+      you can view more blog posts by clicking on the blog post title (very easy), by clicking on /feed or by typing /feed after your domain.</p>
+      <p>If you're curious, check out <a href="https://github.com/chebread">GitHub</a>.<br/>
+      If you have any technical questions, please leave a comment on this blog and we will get back to you as soon as possible.</p>
+      <p>For reference, Haneum created this blog and writes on this blog.</br>
+      If you want to support Haneum, just check the blog post every day.</p>
     `;
     const contents = {
       title: 'Hi, Nice to meet you.',
