@@ -34,17 +34,23 @@ export const feed = () => {
       document.querySelector('.feed-container-content')
     );
     document.querySelectorAll('a').forEach(item => {
-      item.addEventListener('mouseover', e => {
-        if (
-          window.matchMedia('(prefers-color-scheme: light)').matches === true
-        ) {
-          e.target.style = 'color: royalblue;';
-        } else {
-          e.target.style =
-            'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
+      item.addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
+        e => {
+          if (
+            window.matchMedia('(prefers-color-scheme: light)').matches === true
+          ) {
+            e.target.style = 'color: royalblue;';
+          } else {
+            e.target.style =
+              'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
+          }
         }
-      });
-      item.addEventListener('mouseleave', e => (e.target.style = ''));
+      );
+      item.addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
+        e => (e.target.style = '')
+      );
     });
   };
   render();

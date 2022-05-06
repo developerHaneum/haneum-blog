@@ -12,29 +12,22 @@ export const notFoundPage = () => {
       </div>
     `;
     renderHTML(contentMsg, document.querySelector('#root'));
-    if ('ontouchstart' in document.documentElement) {
-      document
-        .querySelector('.nfp-container-content a')
-        .addEventListener('touchstart', e => {
+    document
+      .querySelector('.nfp-container-content a')
+      .addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
+        e => {
           e.target.style.textDecoration = 'underline';
-        });
-      document
-        .querySelector('.nfp-container-content a')
-        .addEventListener('touchend', e => {
+        }
+      );
+    document
+      .querySelector('.nfp-container-content a')
+      .addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
+        e => {
           e.target.style.textDecoration = '';
-        });
-    } else {
-      document
-        .querySelector('.nfp-container-content a')
-        .addEventListener('mouseover', e => {
-          e.target.style.textDecoration = 'underline';
-        });
-      document
-        .querySelector('.nfp-container-content a')
-        .addEventListener('mouseleave', e => {
-          e.target.style.textDecoration = '';
-        });
-    }
+        }
+      );
   };
   render();
 };

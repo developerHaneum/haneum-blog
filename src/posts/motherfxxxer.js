@@ -9,7 +9,7 @@ export const motherfxxxer = () => {
       <br/>fxxxing.</p>
     `;
     const contents = {
-      title: 'Motherfxxxer',
+      title: 'Motherfxxxer.',
       content: contentMsg,
     };
     postMaker(contents);

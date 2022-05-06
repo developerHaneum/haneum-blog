@@ -7,17 +7,13 @@ import { se } from '../posts/se.js';
 import { feed } from '../routes/feed.js';
 import { motherfxxxer } from '../posts/motherfxxxer.js';
 import { myPlaylist } from '../posts/myPlaylist.js';
-import { about } from '../posts/about.js';
 import { childrensDay } from '../posts/childrensDay.js';
+import { whatIsWrong } from '../posts/whatIsWrong.js';
 
 export const routeContents = {
   '/': {
     route: home,
     title: 'Haneum Blog',
-  },
-  '/about': {
-    route: about,
-    title: 'About Haneum.',
   },
   '/feed': {
     route: feed,
@@ -45,14 +41,18 @@ export const routeContents = {
   },
   '/motherfxxxer': {
     route: motherfxxxer,
-    title: 'Motherfxxxer',
+    title: 'Motherfxxxer.',
   },
   '/my-playlist': {
     route: myPlaylist,
-    title: 'My playlist',
+    title: 'My playlist.',
   },
   '/childrens-day': {
     route: childrensDay,
-    title: "Children's Day",
+    title: "Children's Day.",
+  },
+  '/what-is-wrong': {
+    route: whatIsWrong,
+    title: "What's wrong with me?",
   },
 };

@@ -7,7 +7,7 @@ export const myPlaylist = () => {
       <p></p>
     `;
     const contents = {
-      title: 'My playlist',
+      title: 'My playlist.',
       content: contentMsg,
     };
     postMaker(contents);
@@ -15,8 +15,8 @@ export const myPlaylist = () => {
       colde: {
         Dream: 'https://open.spotify.com/track/5fAmvVpvp7iL0QkL1kuw6S',
         'Control me': 'https://open.spotify.com/track/5fAmvVpvp7iL0QkL1kuw6S',
-        'Your Dog Loves You':
-          'https://open.spotify.com/track/2XdyebP7KxClMOse2C5iyA?si=c80fa499e2d14875',
+        "You Don't Need My Love?":
+          'https://open.spotify.com/track/65fXThxSPfQSkgae7GStrD?si=c783d9ba3889441f',
       },
       'Zion.T': {
         'My Luv':
