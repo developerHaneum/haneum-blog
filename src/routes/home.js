@@ -12,8 +12,7 @@ export const home = () => {
       This is my biggest goal and one of my challenges.</p>
       <p>If you would like to see many posts from your blog,<br/>
       you can view more blog posts by clicking on the blog post title (very easy), by clicking on /feed or by typing /feed after your domain.</p>
-      <p>If you're curious, check out <a href="https://github.com/chebread">GitHub</a>.<br/>
-      If you have any technical questions, please leave a comment on this blog and we will get back to you as soon as possible.</p>
+      <p>If you're curious, check out <a href="https://github.com/chebread">GitHub</a>.</p>
       <p>For reference, Haneum created this blog and writes on this blog.</br>
       If you want to support Haneum, just check the blog post every day.</p>
     `;
