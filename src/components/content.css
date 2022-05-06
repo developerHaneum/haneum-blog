@@ -14,8 +14,13 @@
   all: unset;
   cursor: text;
 }
-.content-main p {
+.content-main p:not(:last-child) {
   margin-bottom: 17.5px;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+.content-main p:last-child {
   font-size: 17.5px;
   font-weight: 400;
   line-height: 22.5px;
@@ -49,6 +54,6 @@
     text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;
   }
 }
-/* .utterances {
+.utterances {
   max-width: 100%;
-} */
+}

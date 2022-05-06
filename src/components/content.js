@@ -12,5 +12,8 @@ export const content = contents => `
         </div>
       </div>
     </div>
+    <div class="container-wrapper">
+      <div class="container-comment"></div>
+    </div>
   </div>
 `;
