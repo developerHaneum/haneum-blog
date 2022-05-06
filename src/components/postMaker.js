@@ -39,7 +39,7 @@ export const postMaker = contentMsg => {
         );
       });
     });
-    observer.observe(document.querySelector('.content-main p'), {
+    observer.observe(document.querySelector('.content-main'), {
       childList: true,
       subtree: true,
     });

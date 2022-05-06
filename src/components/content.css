@@ -36,6 +36,9 @@
 .content-main code {
   display: inline;
 }
+.content-main i {
+  font-style: italic;
+}
 @media (prefers-color-scheme: light) {
   .content-main code {
     background-color: rgb(239, 241, 242);

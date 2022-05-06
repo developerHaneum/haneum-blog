@@ -12,7 +12,7 @@ export const whatIsWrong = () => {
       <p>Please, just look at me once. Please.</p>
     `;
     const contents = {
-      title: "What's wrong with me.",
+      title: "What's wrong with me?",
       content: contentMsg,
     };
     postMaker(contents);

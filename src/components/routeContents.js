@@ -9,6 +9,7 @@ import { motherfxxxer } from '../posts/motherfxxxer.js';
 import { myPlaylist } from '../posts/myPlaylist.js';
 import { childrensDay } from '../posts/childrensDay.js';
 import { whatIsWrong } from '../posts/whatIsWrong.js';
+import { aprilRetrospective } from '../posts/aprilRetrospective.js';
 
 export const routeContents = {
   '/': {
@@ -54,5 +55,9 @@ export const routeContents = {
   '/what-is-wrong': {
     route: whatIsWrong,
     title: "What's wrong with me?",
+  },
+  '/april-retrospective': {
+    route: aprilRetrospective,
+    title: 'April retrospective',
   },
 };

@@ -3,10 +3,10 @@ import { postMaker } from '../components/postMaker.js';
 export const se = () => {
   const render = () => {
     const contentMsg = `
-      <p>2021년 3월 19일 SE를 드디어 구매했다.</br>
-      색상은 이쁜 프로덕트 레드 색상을 구매하였고, 메모리 용량은 넉넉하게 128GB로 구매했다.</p>
-      <p>사전 예약으로 구매하여 기다려야 하지만, 내돈으로 구매하니 참으로 설렌다.<br/>
-      사진도 많이 찍고 그래야 겠다.</p>
+    <p>I finally bought the SE on March 19, 2021.</br>
+    I purchased a product with a pretty red color and purchased a generous 128GB memory.</p>
+    <p>I bought it in advance and had to wait, but I bought it with my own money, so I'm really excited.<br/>
+    I will take a lot of pictures and upload them.</p>
     `;
     const contents = {
       title: 'SE, I finally bought it.',
