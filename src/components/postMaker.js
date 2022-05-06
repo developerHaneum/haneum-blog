@@ -8,24 +8,6 @@ export const postMaker = contentMsg => {
       ${content(contentMsg)}
     `;
     renderHTML(contents, document.querySelector('#root'));
-    document.querySelectorAll('a').forEach(item => {
-      item.addEventListener('mouseover', e => {
-        if (e.target.parentNode.className === 'content-title') {
-          if (
-            window.matchMedia('(prefers-color-scheme: light)').matches === true
-          ) {
-            e.target.style = 'color: royalblue;';
-          } else {
-            e.target.style =
-              'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
-          }
-        } else {
-          e.target.style = 'text-decoration: underline;';
-        }
-      });
-      item.addEventListener('mouseleave', e => (e.target.style = ''));
-    });
-    // 만약 posts routes에서 상태 변화 (renderHTML) 가 일어나면 또 다시 mouseover 로직을 실행해줍니다.
     const observer = new MutationObserver(() => {
       document.querySelectorAll('a').forEach(item => {
         item.addEventListener('mouseover', e => {
@@ -34,7 +16,7 @@ export const postMaker = contentMsg => {
               window.matchMedia('(prefers-color-scheme: light)').matches ===
               true
             ) {
-              e.target.style = 'color: royalblue;';
+              e.target.style = 'color: white;';
             } else {
               e.target.style =
                 'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
@@ -48,8 +30,25 @@ export const postMaker = contentMsg => {
     });
     observer.observe(document.querySelector('.content-main p'), {
       childList: true,
+      subtree: true,
+    });
+    document.querySelectorAll('a').forEach(item => {
+      item.addEventListener('mouseover', e => {
+        if (e.target.parentNode.className === 'content-title') {
+          if (
+            window.matchMedia('(prefers-color-scheme: light)').matches === true
+          ) {
+            e.target.style = 'color: white;';
+          } else {
+            e.target.style =
+              'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;';
+          }
+        } else {
+          e.target.style = 'text-decoration: underline;';
+        }
+      });
+      item.addEventListener('mouseleave', e => (e.target.style = ''));
     });
   };
-
   render();
 };
