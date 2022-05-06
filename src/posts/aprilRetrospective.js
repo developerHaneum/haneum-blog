@@ -11,7 +11,7 @@ export const aprilRetrospective = () => {
       I will work hard again and spend the second week of May.</p>
     `;
     const contents = {
-      title: 'April retrospective',
+      title: 'April retrospective.',
       content: contentMsg,
     };
     postMaker(contents);
