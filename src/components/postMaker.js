@@ -19,7 +19,7 @@ export const postMaker = contentMsg => {
               e.target.style = 'color: white;';
             } else {
               e.target.style =
-                'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
+                'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;';
             }
           } else {
             e.target.style = 'text-decoration: underline;';
