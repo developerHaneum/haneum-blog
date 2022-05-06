@@ -14,10 +14,10 @@ export const postMaker = contentMsg => {
           if (
             window.matchMedia('(prefers-color-scheme: light)').matches === true
           ) {
-            e.target.style = 'color: rgb(190, 120, 30);';
+            e.target.style = 'color: royalblue;';
           } else {
             e.target.style =
-              'text-shadow: -1px 0px rgb(190, 120, 30), 0px 1px rgb(190, 120, 30), 1px 0px rgb(190, 120, 30), 0px -1px rgb(190, 120, 30);';
+              'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
           }
         } else {
           e.target.style = 'text-decoration: underline;';
@@ -34,10 +34,10 @@ export const postMaker = contentMsg => {
               window.matchMedia('(prefers-color-scheme: light)').matches ===
               true
             ) {
-              e.target.style = 'color: rgb(190, 120, 30);';
+              e.target.style = 'color: royalblue;';
             } else {
               e.target.style =
-                'text-shadow: -1px 0px rgb(190, 120, 30), 0px 1px rgb(190, 120, 30), 1px 0px rgb(190, 120, 30), 0px -1px rgb(190, 120, 30);';
+                'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
             }
           } else {
             e.target.style = 'text-decoration: underline;';
