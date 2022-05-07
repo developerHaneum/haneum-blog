@@ -48,20 +48,35 @@
   font-style: italic;
 }
 @media (prefers-color-scheme: light) {
-  .content-main code {
-    background-color: rgb(239, 241, 242);
-  }
   .content-title a {
     color: royalblue;
     text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
   }
+  .content-main code {
+    background-color: rgb(239, 241, 242);
+  }
+  .content-main b {
+    background: rgb(255, 255, 0);
+  }
 }
 @media (prefers-color-scheme: dark) {
-  .content-main code {
-    background-color: rgb(53, 57, 65);
-  }
   .content-title a {
     color: black;
     text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;
   }
+  .content-main code {
+    background-color: rgb(53, 57, 65);
+  }
+  .content-main b {
+    background: rgb(255, 255, 0);
+    color: black;
+  }
+}
+.content-main blockquote {
+  border-left: rgb(214, 214, 215) solid 3px;
+  padding-left: 17.5px;
+  margin-bottom: 17.5px;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 22.5px;
 }

@@ -2,9 +2,9 @@ import './content.css';
 import { content } from './content.js';
 import { renderHTML } from './renderHTML.js';
 
-export const postMaker = contentMsg => {
+export const postMaker = contents => {
   const render = () => {
-    renderHTML(content(contentMsg), document.querySelector('#root'));
+    renderHTML(content(contents), document.querySelector('#root'));
     // Hover processing
     document.querySelectorAll('a').forEach(item => {
       item.addEventListener(
@@ -17,7 +17,6 @@ export const postMaker = contentMsg => {
             ) {
               e.target.style =
                 'color: white; font-size: 28.75px; line-height: 33.75px;';
-              console.log(e);
             } else {
               e.target.style =
                 'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
