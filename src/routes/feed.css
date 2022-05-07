@@ -9,6 +9,11 @@
   font-weight: 600;
   line-height: 35px;
 }
+.feed-content-items {
+  height: 35px;
+  display: flex;
+  align-content: center;
+}
 .feed-content-items a {
   all: unset;
   cursor: text;

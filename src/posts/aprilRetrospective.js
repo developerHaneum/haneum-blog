@@ -6,7 +6,7 @@ export const aprilRetrospective = () => {
     const contentMsg = `
       <p>I did a lot of work in April. (A total of 208 commits were made in April)<br/>
       Implementing JavaScript components, midterm exams, first of all, I did a lot of work. (I can't remember everything, but I did a lot first.)</p>
-      <p id="commits" style="color: dimgray;"><i></i></p>
+      <p id="commits"><i></i></p>
       <p>Github tells you that I've done this kind of work and committed it.<br/>
       I will work hard again and spend the second week of May.</p>
     `;

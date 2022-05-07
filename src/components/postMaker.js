@@ -21,10 +21,11 @@ export const postMaker = contentMsg => {
                 window.matchMedia('(prefers-color-scheme: light)').matches ===
                 true
               ) {
-                e.target.style = 'color: white;';
+                e.target.style =
+                  'color: white; font-size: 28.75px; line-height: 33.75px;';
               } else {
                 e.target.style =
-                  'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;';
+                  'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
               }
             } else {
               e.target.style = 'text-decoration: underline;';
@@ -53,10 +54,12 @@ export const postMaker = contentMsg => {
               window.matchMedia('(prefers-color-scheme: light)').matches ===
               true
             ) {
-              e.target.style = 'color: white;';
+              e.target.style =
+                'color: white; font-size: 28.75px; line-height: 33.75px;';
+              console.log(e);
             } else {
               e.target.style =
-                'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;';
+                'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
             }
           } else {
             e.target.style = 'text-decoration: underline;';

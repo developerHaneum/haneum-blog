@@ -40,10 +40,11 @@ export const feed = () => {
           if (
             window.matchMedia('(prefers-color-scheme: light)').matches === true
           ) {
-            e.target.style = 'color: royalblue;';
+            e.target.style =
+              'color: royalblue; font-size: 28.75px; line-height: 33.75px;';
           } else {
             e.target.style =
-              'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;';
+              'text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue; font-size: 28.75px; line-height: 33.75px;';
           }
         }
       );
