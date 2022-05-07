@@ -5,10 +5,8 @@ import { devilPutin } from '../posts/devilPutin.js';
 import { loveIs } from '../posts/loveIs.js';
 import { se } from '../posts/se.js';
 import { feed } from '../routes/feed.js';
-import { motherfxxxer } from '../posts/motherfxxxer.js';
 import { myPlaylist } from '../posts/myPlaylist.js';
 import { childrensDay } from '../posts/childrensDay.js';
-import { whatIsWrong } from '../posts/whatIsWrong.js';
 import { aprilRetrospective } from '../posts/aprilRetrospective.js';
 import { developersTheseDays } from '../posts/developersTheseDays.js';
 
@@ -41,10 +39,6 @@ export const routeContents = {
     route: se,
     title: 'SE, I finally bought it.',
   },
-  '/motherfxxxer': {
-    route: motherfxxxer,
-    title: 'Motherfxxxer.',
-  },
   '/my-playlist': {
     route: myPlaylist,
     title: 'My playlist.',
@@ -52,10 +46,6 @@ export const routeContents = {
   '/childrens-day': {
     route: childrensDay,
     title: "Children's Day.",
-  },
-  '/what-is-wrong': {
-    route: whatIsWrong,
-    title: "What's wrong with me?",
   },
   '/april-retrospective': {
     route: aprilRetrospective,
