@@ -15,15 +15,15 @@ export const feed = () => {
     renderHTML(
       Object.keys(routeContents)
         .map(
-          key => `
+          path => `
           ${
-            !(key === '/feed' || key === '/404' || key === '/503')
+            !(path === '/feed' || path === '/404' || path === '/503')
               ? `
                 <div class="feed-content-items">
-                  <a href="${key}">${
-                  key === '/'
+                  <a href="${path}">${
+                  path === '/'
                     ? 'Hi, Nice to meet you.'
-                    : routeContents[key].title
+                    : routeContents[path].title
                 }</a>
                 </div>
               `
