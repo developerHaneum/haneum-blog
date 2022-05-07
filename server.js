@@ -11,7 +11,9 @@ app.use(
   })
 );
 app.use((req, res, next) => {
-  if (nodeEnv === 'development') {
+  if (nodeEnv === 'production') {
+    res.sendFile(path.join(__dirname, './index.html'));
+  } else {
     compiler.outputFileSystem.readFile(
       path.join(compiler.outputPath, 'index.html'),
       (err, result) => {
@@ -20,9 +22,6 @@ app.use((req, res, next) => {
       }
     );
     return;
-  }
-  if (nodeEnv === 'production') {
-    res.sendFile(path.join(__dirname, './index.html'));
   }
 });
 app.use(express.static(path.join(__dirname, 'dist')));

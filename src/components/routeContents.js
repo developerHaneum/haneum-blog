@@ -9,7 +9,6 @@ import { myPlaylist } from '../posts/myPlaylist.js';
 import { childrensDay } from '../posts/childrensDay.js';
 import { aprilRetrospective } from '../posts/aprilRetrospective.js';
 import { developersTheseDays } from '../posts/developersTheseDays.js';
-import { amI } from '../posts/amI.js';
 
 export const routeContents = {
   '/': {
@@ -55,9 +54,5 @@ export const routeContents = {
   '/developers-these-days': {
     route: developersTheseDays,
     title: 'Developers these days.',
-  },
-  '/am-i': {
-    route: amI,
-    title: 'Am I really needed in this world?',
   },
 };

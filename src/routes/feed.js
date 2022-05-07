@@ -50,7 +50,7 @@ export const feed = () => {
       );
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
-        e => (e.target.style = '')
+        e => e.target.removeAttribute('style')
       );
     });
   };

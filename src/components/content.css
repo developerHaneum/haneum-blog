@@ -4,6 +4,10 @@
 .container-wrapper {
   margin: 10px;
 }
+.container-content {
+  /*For more reading users experience*/
+  max-width: 1000px;
+}
 .content-title {
   display: flex;
   flex-direction: row;
