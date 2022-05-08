@@ -7,7 +7,6 @@ import { se } from '../posts/se.js';
 import { feed } from '../routes/feed.js';
 import { myPlaylist } from '../posts/myPlaylist.js';
 import { childrensDay } from '../posts/childrensDay.js';
-import { aprilRetrospective } from '../posts/aprilRetrospective.js';
 import { developersTheseDays } from '../posts/developersTheseDays.js';
 
 export const routeContents = {
@@ -46,10 +45,6 @@ export const routeContents = {
   '/childrens-day': {
     route: childrensDay,
     title: "Children's Day.",
-  },
-  '/april-retrospective': {
-    route: aprilRetrospective,
-    title: 'April retrospective.',
   },
   '/developers-these-days': {
     route: developersTheseDays,

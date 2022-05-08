@@ -18,14 +18,13 @@ export const postMaker = contents => {
               true
             ) {
               e.target.style =
-                'color: white; font-size: 28.75px; line-height: 33.75px;';
+                'color: white; font-size: 28.75px; line-height: 35px;';
             } else {
               e.target.style =
-                'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
+                'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 35px;';
             }
           } else {
-            e.target.style =
-              'color: rgb(190, 150, 30);  font-size: 16.25px; line-height: 16.25px;';
+            e.target.style = 'color: rgb(190, 150, 30);';
           }
         }
       );
@@ -48,14 +47,13 @@ export const postMaker = contents => {
                 true
               ) {
                 e.target.style =
-                  'color: white; font-size: 28.75px; line-height: 33.75px;';
+                  'color: white; font-size: 28.75px; line-height: 35px;';
               } else {
                 e.target.style =
-                  'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
+                  'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 35px;';
               }
             } else {
-              e.target.style =
-                'color: rgb(190, 150, 30); font-size: 16.25px; line-height: 16.25px;';
+              e.target.style = 'color: rgb(190, 150, 30);';
             }
           }
         );
