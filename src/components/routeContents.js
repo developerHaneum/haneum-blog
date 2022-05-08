@@ -10,6 +10,7 @@ import { childrensDay } from '../posts/childrensDay.js';
 import { developersTheseDays } from '../posts/developersTheseDays.js';
 import { jsConf } from '../posts/jsConf.js';
 import { aboutCrelement } from '../posts/aboutCrelement.js';
+import { spotify } from '../posts/spotify.js';
 
 export const routeContents = {
   '/': {
@@ -59,5 +60,9 @@ export const routeContents = {
   '/about-crelement': {
     route: aboutCrelement,
     title: 'About crelement.',
+  },
+  '/spotify': {
+    route: spotify,
+    title: 'What I feel while using Spotify.',
   },
 };
