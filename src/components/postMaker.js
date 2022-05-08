@@ -5,6 +5,8 @@ import { renderHTML } from './renderHTML.js';
 export const postMaker = contents => {
   const render = () => {
     renderHTML(content(contents), document.querySelector('#root'));
+    // Other logics
+
     // Hover processing
     document.querySelectorAll('a').forEach(item => {
       item.addEventListener(
