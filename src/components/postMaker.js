@@ -25,7 +25,7 @@ export const postMaker = contents => {
             }
           } else {
             e.target.style =
-              'color: rgb(190, 150, 30); font-size: 16.25px; line-height: 16.25px;';
+              'color: rgb(190, 150, 30);  font-size: 16.25px; line-height: 16.25px;';
           }
         }
       );

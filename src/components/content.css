@@ -39,11 +39,8 @@
 .content-main a {
   all: unset;
   cursor: text;
-  display: inline-flex;
-  flex-direction: row;
-  align-items: center;
-  height: 22.5px;
   color: royalblue;
+  margin: auto;
 }
 .content-main code {
   display: inline;
