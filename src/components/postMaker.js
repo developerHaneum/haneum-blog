@@ -22,7 +22,8 @@ export const postMaker = contents => {
                 'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
             }
           } else {
-            e.target.style = 'text-decoration: underline;';
+            e.target.style =
+              'color: rgb(190, 150, 30); font-size: 16.25px; line-height: 16.25px;';
           }
         }
       );
@@ -51,7 +52,8 @@ export const postMaker = contents => {
                   'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 33.75px;';
               }
             } else {
-              e.target.style = 'text-decoration: underline;';
+              e.target.style =
+                'color: rgb(190, 150, 30); font-size: 16.25px; line-height: 16.25px;';
             }
           }
         );

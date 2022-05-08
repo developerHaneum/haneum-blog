@@ -39,6 +39,10 @@
 .content-main a {
   all: unset;
   cursor: text;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  height: 22.5px;
   color: royalblue;
 }
 .content-main code {
@@ -63,7 +67,7 @@
     background-color: rgb(239, 241, 242);
   }
   .content-main blockquote {
-    border-left: rgb(214, 214, 215) solid 3px;
+    border-left: 4.375px solid rgb(214, 214, 215);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -75,6 +79,6 @@
     background-color: rgb(53, 57, 65);
   }
   .content-main blockquote {
-    border-left: rgb(41, 41, 40) solid 3px;
+    border-left: 4.375px solid rgb(41, 41, 40);
   }
 }

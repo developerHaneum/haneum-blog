@@ -13,9 +13,10 @@
   max-width: 1000px;
 }
 .feed-content-items {
-  height: 35px;
   display: flex;
+  flex-direction: row;
   align-content: center;
+  height: 35px;
 }
 .feed-content-items a {
   all: unset;
