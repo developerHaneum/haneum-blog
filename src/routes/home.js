@@ -3,7 +3,7 @@ import { postMaker } from '../components/postMaker.js';
 export const home = () => {
   const render = () => {
     const contentMsg = `
-      <p>My name is Cha Haneum, I am Korean, and I do Fron-tend development.</p>
+      <p>My name is Cha Haneum, I am Korean, and I do Front-end development.</p>
       <p>I take simple and intuitive web development very seriously.<br/>
       It has to do with web accessibility and has a huge impact on UX. <br/>
       We also dream of a web world that can be used by everyone, from kindergarteners to the elderly.</p>
