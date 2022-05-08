@@ -16,17 +16,13 @@ export const notFoundPage = () => {
       .querySelector('.nfp-container-content a')
       .addEventListener(
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
-        e => {
-          e.target.style.textDecoration = 'underline';
-        }
+        e => (e.target.style = 'text-decoration: underline;')
       );
     document
       .querySelector('.nfp-container-content a')
       .addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
-        e => {
-          e.target.style.textDecoration = '';
-        }
+        e => e.target.removeAttribute('style')
       );
   };
   render();
