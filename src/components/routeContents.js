@@ -10,6 +10,7 @@ import { childrensDay } from '../posts/childrensDay.js';
 import { aprilRetrospective } from '../posts/aprilRetrospective.js';
 import { developersTheseDays } from '../posts/developersTheseDays.js';
 import { diggingInsertAdjacentHTML } from '../posts/diggingInsertAdjacentHTML.js';
+import { rpsGame } from '../posts/rpsGame.js';
 
 export const routeContents = {
   '/': {
@@ -59,5 +60,9 @@ export const routeContents = {
   '/digging-insertadjacenthtml': {
     route: diggingInsertAdjacentHTML,
     title: 'Digging into insertAdjacentHTML',
+  },
+  '/rps-game': {
+    route: rpsGame,
+    title: 'Rock Paper Scissors game.',
   },
 };
