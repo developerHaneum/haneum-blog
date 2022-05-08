@@ -8,6 +8,8 @@ import { feed } from '../routes/feed.js';
 import { myPlaylist } from '../posts/myPlaylist.js';
 import { childrensDay } from '../posts/childrensDay.js';
 import { developersTheseDays } from '../posts/developersTheseDays.js';
+import { jsConf } from '../posts/jsConf.js';
+import { aboutCrelement } from '../posts/aboutCrelement.js';
 
 export const routeContents = {
   '/': {
@@ -49,5 +51,13 @@ export const routeContents = {
   '/developers-these-days': {
     route: developersTheseDays,
     title: 'Developers these days.',
+  },
+  '/jsconf': {
+    route: jsConf,
+    title: 'JSConf.',
+  },
+  '/about-crelement': {
+    route: aboutCrelement,
+    title: 'About crelement.',
   },
 };
