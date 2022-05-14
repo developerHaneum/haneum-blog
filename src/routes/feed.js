@@ -6,29 +6,27 @@ export const feed = () => {
   const render = () => {
     const contentMsg = `
       <div class="feed-container">
-        <div class="feed-container-wrapper">
           <div class="feed-container-content"></div>
-        </div>
       </div>
     `;
     renderHTML(contentMsg, document.querySelector('#root'));
     renderHTML(
       Object.keys(routeContents)
         .map(
-          path => `
-          ${
-            !(path === '/feed' || path === '/404' || path === '/503')
-              ? `
-                <div class="feed-content-items">
-                  <a href="${path}">${
-                  path === '/'
-                    ? 'Hi, Nice to meet you.'
-                    : routeContents[path].title
-                }</a>
-                </div>
-              `
-              : ''
-          }`
+          path =>
+            `${
+              !(path === '/feed' || path === '/404' || path === '/503')
+                ? `<div class="feed-container-wrapper">
+                    <div class="feed-content-items">
+                      <a href="${path}">${
+                    path === '/'
+                      ? 'Hi, Nice to meet you.'
+                      : routeContents[path].title
+                  }</a>
+                    </div>
+                  </div>`
+                : ''
+            }`
         )
         .join(''),
       document.querySelector('.feed-container-content')

@@ -1,8 +1,14 @@
 .feed-container {
   display: block;
 }
-.feed-container-wrapper {
-  margin: 10px;
+.feed-container-wrapper:first-child {
+  margin: 10px 10px 0px 10px;
+}
+.feed-container-wrapper:not(:first-child, :last-child) {
+  margin: 0px 10px 0px 10px
+}
+.feed-container-wrapper:last-child {
+  margin: 0px 10px 10px 10px;
 }
 .feed-container-content {
 

@@ -5,8 +5,6 @@ import { renderHTML } from './renderHTML.js';
 export const postMaker = contents => {
   const render = () => {
     renderHTML(content(contents), document.querySelector('#root'));
-    // Other logics
-
     // Hover processing
     document.querySelectorAll('a').forEach(item => {
       item.addEventListener(
@@ -24,7 +22,8 @@ export const postMaker = contents => {
                 'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 35px;';
             }
           } else {
-            e.target.style = 'color: rgb(190, 150, 30);';
+            e.target.style =
+              'color: rgb(190, 150, 30); text-decoration: underline;';
           }
         }
       );
@@ -53,7 +52,8 @@ export const postMaker = contents => {
                   'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 35px;';
               }
             } else {
-              e.target.style = 'color: rgb(190, 150, 30);';
+              e.target.style =
+                'color: rgb(190, 150, 30); text-decoration: underline;';
             }
           }
         );

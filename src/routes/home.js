@@ -12,7 +12,7 @@ export const home = () => {
       If you would like to see many articles on the blog,
       you can view more blog posts by clicking on <a href="/feed">the blog post title</a>.
       
-      If you're curious about me, check out <a href="https://github.com/chebread">GitHub</a>.
+      If you're curious about me, check out <a target="_blank" href="https://github.com/chebread">GitHub</a>.
     `;
     const contents = {
       title: 'Hi, Nice to meet you.',
