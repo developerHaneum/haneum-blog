@@ -6,7 +6,7 @@ export const serviceUnavailable = () => {
     const contentMsg = `
       <div class="nfp-container">
         <div class="nfp-container-wrapper">
-          <div class="nfp-container-content">
+          <div class="nfp-container-content" role="content">
             <p>503 Service unavailable.</p>
             <p>The blog is being reorganized.</p>
             <p>There is little way to know when this error will recover.</p>

@@ -17,7 +17,7 @@ export const feed = () => {
             `${
               !(path === '/feed' || path === '/404' || path === '/503')
                 ? `<div class="feed-container-wrapper">
-                    <div class="feed-content-items">
+                    <div class="feed-content-items" role="link">
                       <a href="${path}">${
                     path === '/'
                       ? 'Hi, Nice to meet you.'

@@ -5,7 +5,7 @@ export const notFoundPage = () => {
     const contentMsg = `
       <div class="nfp-container">
         <div class="nfp-container-wrapper">
-          <div class="nfp-container-content">
+          <div class="nfp-container-content" role="content">
             <p>404 Not found page.<br/>
             Sorry. Do you want <a href="/">to go the first route</a>?</p>
           </div>
