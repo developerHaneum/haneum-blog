@@ -11,6 +11,5 @@ This is my blog.
 - It use `insertAdjacentHTML` function to render the HTML so it renders relatively fast.
 - State management can be done using the `render()` function of each component.
 
-#
 ## License
 MIT License &copy; 2022 Cha Haneum
