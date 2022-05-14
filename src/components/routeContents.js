@@ -3,6 +3,7 @@ import { feed } from '../routes/feed.js';
 import { notFoundPage } from '../routes/notFoundPage.js';
 import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { loveIs } from '../posts/loveIs.js';
+import { reason } from '../posts/reason.js';
 
 export const routeContents = {
   '/': {
@@ -24,5 +25,9 @@ export const routeContents = {
   '/love-is': {
     route: loveIs,
     title: 'Love is.',
+  },
+  '/reason': {
+    route: reason,
+    title: 'Reason.',
   },
 };
