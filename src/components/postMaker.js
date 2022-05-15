@@ -22,8 +22,7 @@ export const postMaker = contents => {
                 'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 35px;';
             }
           } else {
-            e.target.style =
-              'color: rgb(190, 150, 30); text-decoration: underline;';
+            e.target.style = 'color: rgb(190, 150, 30);';
           }
         }
       );
@@ -52,8 +51,7 @@ export const postMaker = contents => {
                   'text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white; font-size: 28.75px; line-height: 35px;';
               }
             } else {
-              e.target.style =
-                'color: rgb(190, 150, 30); text-decoration: underline;';
+              e.target.style = 'color: rgb(190, 150, 30);';
             }
           }
         );

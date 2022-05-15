@@ -4,6 +4,7 @@ import { notFoundPage } from '../routes/notFoundPage.js';
 import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { loveIs } from '../posts/loveIs.js';
 import { reason } from '../posts/reason.js';
+import { cryptocurrency } from '../posts/cryptocurrency.js';
 
 export const routeContents = {
   '/': {
@@ -29,5 +30,9 @@ export const routeContents = {
   '/reason': {
     route: reason,
     title: 'Reason.',
+  },
+  '/cryptocurrency': {
+    route: cryptocurrency,
+    title: 'Cryptocurrency.',
   },
 };

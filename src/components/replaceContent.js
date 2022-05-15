@@ -1,7 +1,8 @@
 export const replaceContent = content => {
   const arrContent = content.split('\n');
-  arrContent.splice(0, 1);
-  arrContent.splice(-1, 1);
+  if (arrContent[arrContent.length - 1].replace(/\s/g, '').length === 0) {
+    arrContent.splice(-1, 1);
+  }
   return `${arrContent
     .join('\n')
     .split('\n\n')
