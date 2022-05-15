@@ -11,7 +11,7 @@ export const postMaker = contents => {
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
         e => {
           if (e.target.parentNode.className === 'content-title') {
-            e.target.style = `color: white; font-size: 27.25px; line-height: 35px; background-color: inherit;`;
+            e.target.style = `color: white; font-size: 27.25px; line-height: 35px;`;
           } else {
             e.target.style = 'color: rgb(190, 150, 30);';
           }
@@ -19,9 +19,7 @@ export const postMaker = contents => {
       );
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
-        e => {
-          e.target.removeAttribute('style');
-        }
+        e => e.target.removeAttribute('style')
       );
       if ('ontouchstart' in document.documentElement) {
         item.addEventListener('touchcancel', e =>
