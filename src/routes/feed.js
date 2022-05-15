@@ -46,6 +46,10 @@ export const feed = () => {
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
         e => e.target.removeAttribute('style')
       );
+      item.addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchcancel' : '',
+        e => e.target.removeAttribute('style')
+      );
     });
   };
   render();

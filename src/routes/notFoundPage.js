@@ -24,6 +24,12 @@ export const notFoundPage = () => {
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
         e => e.target.removeAttribute('style')
       );
+    document
+      .querySelector('.nfp-container-content a')
+      .addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchcancel' : '',
+        e => e.target.removeAttribute('style')
+      );
   };
   render();
 };

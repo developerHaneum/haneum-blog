@@ -25,6 +25,10 @@ export const postMaker = contents => {
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
         e => e.target.removeAttribute('style')
       );
+      item.addEventListener(
+        'ontouchstart' in document.documentElement ? 'touchcancel' : '',
+        e => e.target.removeAttribute('style')
+      );
     });
     // Hover (state component) processing
     new MutationObserver(() => {
@@ -49,6 +53,10 @@ export const postMaker = contents => {
           'ontouchstart' in document.documentElement
             ? 'touchend'
             : 'mouseleave',
+          e => e.target.removeAttribute('style')
+        );
+        item.addEventListener(
+          'ontouchstart' in document.documentElement ? 'touchcancel' : '',
           e => e.target.removeAttribute('style')
         );
       });
