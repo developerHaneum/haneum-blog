@@ -14,7 +14,7 @@ export const postMaker = contents => {
           if (e.target.parentNode.className === 'content-title') {
             e.target.style = `color: white; ${
               'ontouchstart' in document.documentElement
-                ? 'font-size: 27.25px; line-height: 35px;'
+                ? 'font-size: 27.25px; line-height: 35px; background-color: inherit;'
                 : 'font-size: 28.75px; line-height: 35px;'
             }`;
           } else {
@@ -24,7 +24,11 @@ export const postMaker = contents => {
       );
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
-        e => e.target.removeAttribute('style')
+        e => {
+          e.target.removeAttribute('style');
+          e.preventDefault();
+          console.log(1);
+        }
       );
       if ('ontouchstart' in document.documentElement) {
         item.addEventListener('touchcancel', e =>
@@ -43,12 +47,7 @@ export const postMaker = contents => {
             if (e.target.parentNode.className === 'content-title') {
               e.target.style = `color: white; ${
                 'ontouchstart' in document.documentElement
-                  ? `font-size: 27.25px; line-height: 35px; ${
-                      window.matchMedia('(prefers-color-scheme: light)')
-                        .matches === true
-                        ? 'background-color: white'
-                        : 'background-color: black'
-                    }`
+                  ? 'font-size: 27.25px; line-height: 35px;'
                   : 'font-size: 28.75px; line-height: 35px;'
               }`;
             } else {
