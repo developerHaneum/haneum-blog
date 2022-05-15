@@ -1,10 +1,13 @@
 import { postMaker } from '../components/postMaker.js';
 
 export const cryptocurrency = () => {
-  const contentMsg = `hello
+  const contentMsg = `
+    Hello
 
-  hello
-    `;
+
+    yes!
+    hello
+  `;
   const contents = {
     title: 'Cryptocurrency.',
     content: contentMsg,
