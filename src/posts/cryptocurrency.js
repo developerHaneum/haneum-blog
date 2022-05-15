@@ -2,11 +2,10 @@ import { postMaker } from '../components/postMaker.js';
 
 export const cryptocurrency = () => {
   const contentMsg = `
-    Hello
+    Is <a href="https://ko.wikipedia.org/wiki/암호화폐">cryptocurrency</a> really a viable idea? Or is it a gambling board that has lost its essence?
+    Can cryptocurrency itself become useful in the world, rather than simply converting cryptocurrency into general currency?
 
-
-    yes!
-    hello
+    Who will bring the cryptocurrency innovation?
   `;
   const contents = {
     title: 'Cryptocurrency.',

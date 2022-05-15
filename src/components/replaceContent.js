@@ -12,7 +12,10 @@ export const replaceContent = content => {
       a === ''
         ? ''
         : `${
-            !(a.split('\n').filter(Boolean)[0].indexOf('<') === -1)
+            !(
+              a.split('\n').filter(Boolean)[0].indexOf('<p') === -1 ||
+              a.split('\n').filter(Boolean)[0].indexOf('<blockquote') === -1
+            )
               ? `${`${a
                   .split('\n')
                   .filter(Boolean)
