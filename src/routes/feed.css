@@ -11,12 +11,11 @@
   margin: 0px 10px 10px 10px;
 }
 .feed-container-content {
-
+  /*For more reading users experience*/
+  max-width: 1000px;
   font-size: 30px;
   font-weight: 600;
   line-height: 35px;
-  /*For more reading users experience*/
-  max-width: 1000px;
 }
 .feed-content-items {
   display: flex;
