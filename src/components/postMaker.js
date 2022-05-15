@@ -14,7 +14,7 @@ export const postMaker = contents => {
           if (e.target.parentNode.className === 'content-title') {
             e.target.style = `color: white; ${
               'ontouchstart' in document.documentElement
-                ? ' font-size: 27.25px; line-height: 35px;'
+                ? 'font-size: 27.25px; line-height: 35px;'
                 : 'font-size: 28.75px; line-height: 35px;'
             }`;
           } else {
@@ -43,7 +43,12 @@ export const postMaker = contents => {
             if (e.target.parentNode.className === 'content-title') {
               e.target.style = `color: white; ${
                 'ontouchstart' in document.documentElement
-                  ? ' font-size: 27.25px; line-height: 35px;'
+                  ? `font-size: 27.25px; line-height: 35px; ${
+                      window.matchMedia('(prefers-color-scheme: light)')
+                        .matches === true
+                        ? 'background-color: white'
+                        : 'background-color: black'
+                    }`
                   : 'font-size: 28.75px; line-height: 35px;'
               }`;
             } else {
