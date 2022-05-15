@@ -24,13 +24,7 @@ export const postMaker = contents => {
       );
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
-        e => {
-          if ('ontouchstart' in document.documentElement) {
-            e.preventDefault();
-            window.location.href = e.target.attributes.href.value;
-          }
-          e.target.removeAttribute('style');
-        }
+        e => e.target.removeAttribute('style')
       );
       if ('ontouchstart' in document.documentElement) {
         item.addEventListener('touchcancel', e =>
@@ -61,13 +55,7 @@ export const postMaker = contents => {
           'ontouchstart' in document.documentElement
             ? 'touchend'
             : 'mouseleave',
-          e => {
-            if ('ontouchstart' in document.documentElement) {
-              e.preventDefault();
-              window.location.href = e.target.attributes.href.value;
-            }
-            e.target.removeAttribute('style');
-          }
+          e => e.target.removeAttribute('style')
         );
         if ('ontouchstart' in document.documentElement) {
           item.addEventListener('touchcancel', e =>

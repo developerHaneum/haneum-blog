@@ -34,17 +34,12 @@ export const feed = () => {
     document.querySelectorAll('a').forEach(item => {
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
-        e => {
-          if ('ontouchstart' in document.documentElement) {
-            e.preventDefault();
-            window.location.href = e.target.attributes.href.value;
-          }
-          e.target.style = `color: royalblue; ${
+        e =>
+          (e.target.style = `color: royalblue; ${
             'ontouchstart' in document.documentElement
               ? 'font-size: 27.25px; line-height: 35px;'
               : 'font-size: 28.75px; line-height: 35px;'
-          }`;
-        }
+          }`)
       );
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',

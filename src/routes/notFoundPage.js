@@ -16,13 +16,7 @@ export const notFoundPage = () => {
       .querySelector('.nfp-container-content a')
       .addEventListener(
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
-        e => {
-          if ('ontouchstart' in document.documentElement) {
-            e.preventDefault();
-            window.location.href = e.target.attributes.href.value;
-          }
-          e.target.style = 'text-decoration: underline;';
-        }
+        e => (e.target.style = 'text-decoration: underline;')
       );
     document
       .querySelector('.nfp-container-content a')
