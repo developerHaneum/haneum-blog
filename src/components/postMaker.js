@@ -1,7 +1,6 @@
 import './content.css';
 import { content } from './content.js';
 import { renderHTML } from './renderHTML.js';
-import { routeContents } from './routeContents';
 
 export const postMaker = contents => {
   const render = () => {
@@ -12,11 +11,7 @@ export const postMaker = contents => {
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
         e => {
           if (e.target.parentNode.className === 'content-title') {
-            e.target.style = `color: white; ${
-              'ontouchstart' in document.documentElement
-                ? 'font-size: 27.25px; line-height: 35px; background-color: inherit;'
-                : 'font-size: 28.75px; line-height: 35px;'
-            }`;
+            e.target.style = `color: white; font-size: 27.25px; line-height: 35px; background-color: inherit;`;
           } else {
             e.target.style = 'color: rgb(190, 150, 30);';
           }
@@ -26,8 +21,6 @@ export const postMaker = contents => {
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
         e => {
           e.target.removeAttribute('style');
-          e.preventDefault();
-          console.log(1);
         }
       );
       if ('ontouchstart' in document.documentElement) {
