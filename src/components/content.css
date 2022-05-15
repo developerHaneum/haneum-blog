@@ -40,6 +40,10 @@
 .content-main i {
   font-style: italic;
 }
+.content-main b {
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
 @media (hover: none) {
   .content-title {
     font-size: 28.5px;

@@ -7,7 +7,7 @@ export const home = () => {
       
       I take simple and intuitive web development very seriously.
       It has to do with web accessibility and has a huge impact on UX.
-      We also dream of a web world that can be used by everyone, from kindergarteners to the elderly.
+      Also, I dream of a web world that can be used by everyone, from kindergarteners to the elderly.
 
       If you would like to see many articles on the blog, you can view more blog posts by clicking on <a href="/feed">the blog post title</a>.
       
