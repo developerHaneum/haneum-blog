@@ -2,13 +2,13 @@
   display: block;
 }
 .feed-container-wrapper:first-child {
-  margin: 10px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
 }
 .feed-container-wrapper:not(:first-child, :last-child) {
-  margin: 0px 10px 0px 10px
+  padding: 0px 10px 0px 10px
 }
 .feed-container-wrapper:last-child {
-  margin: 0px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
 }
 .feed-container-content {
   /*For more reading users experience*/
@@ -34,7 +34,6 @@
 }
 @media (prefers-color-scheme: dark) {
   .feed-content-items {
-    text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white;
-    color: black;
+    color: white;
   }
 }

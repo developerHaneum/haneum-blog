@@ -2,10 +2,10 @@
   display: block;
 }
 .container-wrapper:nth-child(1) {
-  margin: 10px 10px 17.5px 10px;
+  padding: 10px 10px 17.5px 10px;
 }
 .container-wrapper:not(:nth-child(1)) {
-  margin: 0 10px 10px 10px;
+  padding: 0 10px 10px 10px;
 }
 .container-content {
   /*For more reading users experience*/
@@ -88,8 +88,7 @@
 }
 @media (prefers-color-scheme: dark) {
   .content-title a {
-    color: black;
-    text-shadow: -1px 0px royalblue, 0px 1px royalblue, 1px 0px royalblue, 0px -1px royalblue;
+    color: royalblue;
   }
   .content-main code {
     background-color: rgb(53, 57, 65);
