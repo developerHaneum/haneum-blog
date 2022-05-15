@@ -37,7 +37,7 @@ export const feed = () => {
         e => {
           e.target.style = `color: royalblue; ${
             'ontouchstart' in document.documentElement
-              ? 'font-size: 27.25px; line-height: 35px; background-color: red;'
+              ? 'font-size: 27.25px; line-height: 35px;'
               : 'font-size: 28.75px; line-height: 35px;'
           }`;
         }

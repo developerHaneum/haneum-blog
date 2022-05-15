@@ -23,7 +23,6 @@
 .feed-content-items a {
   all: unset;
   cursor: text;
-  background-color: seagreen;
 }
 @media (hover:none) {
   .feed-container-content {
