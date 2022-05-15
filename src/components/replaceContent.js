@@ -3,7 +3,6 @@ export const replaceContent = content => {
   if (arrContent[arrContent.length - 1].replace(/\s/g, '').length === 0) {
     arrContent.splice(-1, 1);
   }
-  console.log(arrContent);
   return `${arrContent
     .map(a => (a.replace(/\s/g, '').length === 0 ? '' : a))
     .join('\n')

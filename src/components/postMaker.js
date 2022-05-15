@@ -11,16 +11,11 @@ export const postMaker = contents => {
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
         e => {
           if (e.target.parentNode.className === 'content-title') {
-            if (
-              window.matchMedia('(prefers-color-scheme: light)').matches ===
-              true
-            ) {
-              e.target.style =
-                'color: white; font-size: 28.75px; line-height: 35px;';
-            } else {
-              e.target.style =
-                'color: white; font-size: 28.75px; line-height: 35px;';
-            }
+            e.target.style = `color: white; ${
+              'ontouchstart' in document.documentElement
+                ? ' font-size: 27.25px; line-height: 35px;'
+                : 'font-size: 28.75px; line-height: 35px;'
+            }`;
           } else {
             e.target.style = 'color: rgb(190, 150, 30);';
           }
@@ -40,16 +35,11 @@ export const postMaker = contents => {
             : 'mouseover',
           e => {
             if (e.target.parentNode.className === 'content-title') {
-              if (
-                window.matchMedia('(prefers-color-scheme: light)').matches ===
-                true
-              ) {
-                e.target.style =
-                  'color: white; font-size: 28.75px; line-height: 35px;';
-              } else {
-                e.target.style =
-                  'color: white; font-size: 28.75px; line-height: 35px;';
-              }
+              e.target.style = `color: white; ${
+                'ontouchstart' in document.documentElement
+                  ? ' font-size: 27.25px; line-height: 35px;'
+                  : 'font-size: 28.75px; line-height: 35px;'
+              }`;
             } else {
               e.target.style = 'color: rgb(190, 150, 30);';
             }

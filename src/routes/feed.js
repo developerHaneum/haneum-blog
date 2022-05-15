@@ -35,15 +35,11 @@ export const feed = () => {
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
         e => {
-          if (
-            window.matchMedia('(prefers-color-scheme: light)').matches === true
-          ) {
-            e.target.style =
-              'color: royalblue; font-size: 28.75px; line-height: 35px;';
-          } else {
-            e.target.style =
-              'color: royalblue; font-size: 28.75px; line-height: 35px;';
-          }
+          e.target.style = `color: royalblue; ${
+            'ontouchstart' in document.documentElement
+              ? 'font-size: 27.25px; line-height: 35px;'
+              : 'font-size: 28.75px; line-height: 35px;'
+          }`;
         }
       );
       item.addEventListener(
