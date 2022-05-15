@@ -23,7 +23,6 @@
 .feed-content-items a {
   all: unset;
   cursor: text;
-  touch-action: none;
 }
 @media (hover:none) {
   .feed-container-content {

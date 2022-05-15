@@ -14,6 +14,5 @@
 .nfp-container-content a {
   all: unset;
   cursor: text;
-  touch-action: none;
   color: royalblue;
 }

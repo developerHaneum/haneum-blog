@@ -16,7 +16,13 @@ export const notFoundPage = () => {
       .querySelector('.nfp-container-content a')
       .addEventListener(
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
-        e => (e.target.style = 'text-decoration: underline;')
+        e => {
+          if ('ontouchstart' in document.documentElement) {
+            e.preventDefault();
+            window.location.href = e.target.attributes.href.value;
+          }
+          e.target.style = 'text-decoration: underline;';
+        }
       );
     document
       .querySelector('.nfp-container-content a')
@@ -24,12 +30,13 @@ export const notFoundPage = () => {
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
         e => e.target.removeAttribute('style')
       );
-    document
-      .querySelector('.nfp-container-content a')
-      .addEventListener(
-        'ontouchstart' in document.documentElement ? 'touchcancel' : '',
-        e => e.target.removeAttribute('style')
-      );
+    if ('ontouchstart' in document.documentElement) {
+      document
+        .querySelector('.nfp-container-content a')
+        .addEventListener('touchcancel', e =>
+          e.target.removeAttribute('style')
+        );
+    }
   };
   render();
 };

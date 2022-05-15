@@ -35,6 +35,10 @@ export const feed = () => {
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchstart' : 'mouseover',
         e => {
+          if ('ontouchstart' in document.documentElement) {
+            e.preventDefault();
+            window.location.href = e.target.attributes.href.value;
+          }
           e.target.style = `color: royalblue; ${
             'ontouchstart' in document.documentElement
               ? 'font-size: 27.25px; line-height: 35px;'
@@ -46,10 +50,11 @@ export const feed = () => {
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
         e => e.target.removeAttribute('style')
       );
-      item.addEventListener(
-        'ontouchstart' in document.documentElement ? 'touchcancel' : '',
-        e => e.target.removeAttribute('style')
-      );
+      if ('ontouchstart' in document.documentElement) {
+        item.addEventListener('touchcancel', e =>
+          e.target.removeAttribute('style')
+        );
+      }
     });
   };
   render();

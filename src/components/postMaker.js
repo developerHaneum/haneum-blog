@@ -1,6 +1,7 @@
 import './content.css';
 import { content } from './content.js';
 import { renderHTML } from './renderHTML.js';
+import { routeContents } from './routeContents';
 
 export const postMaker = contents => {
   const render = () => {
@@ -23,12 +24,19 @@ export const postMaker = contents => {
       );
       item.addEventListener(
         'ontouchstart' in document.documentElement ? 'touchend' : 'mouseleave',
-        e => e.target.removeAttribute('style')
+        e => {
+          if ('ontouchstart' in document.documentElement) {
+            e.preventDefault();
+            window.location.href = e.target.attributes.href.value;
+          }
+          e.target.removeAttribute('style');
+        }
       );
-      item.addEventListener(
-        'ontouchstart' in document.documentElement ? 'touchcancel' : '',
-        e => e.target.removeAttribute('style')
-      );
+      if ('ontouchstart' in document.documentElement) {
+        item.addEventListener('touchcancel', e =>
+          e.target.removeAttribute('style')
+        );
+      }
     });
     // Hover (state component) processing
     new MutationObserver(() => {
@@ -53,12 +61,19 @@ export const postMaker = contents => {
           'ontouchstart' in document.documentElement
             ? 'touchend'
             : 'mouseleave',
-          e => e.target.removeAttribute('style')
+          e => {
+            if ('ontouchstart' in document.documentElement) {
+              e.preventDefault();
+              window.location.href = e.target.attributes.href.value;
+            }
+            e.target.removeAttribute('style');
+          }
         );
-        item.addEventListener(
-          'ontouchstart' in document.documentElement ? 'touchcancel' : '',
-          e => e.target.removeAttribute('style')
-        );
+        if ('ontouchstart' in document.documentElement) {
+          item.addEventListener('touchcancel', e =>
+            e.target.removeAttribute('style')
+          );
+        }
       });
     }).observe(document.querySelector('.content-main'), {
       childList: true,

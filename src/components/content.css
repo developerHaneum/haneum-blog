@@ -20,7 +20,6 @@
 .content-title a {
   all: unset;
   cursor: text;
-  touch-action: none;
 }
 .content-main p {
   font-weight: 400;
@@ -33,7 +32,6 @@
 .content-main a {
   all: unset;
   cursor: text;
-  touch-action: none;
   color: royalblue;
 }
 .content-main code {
