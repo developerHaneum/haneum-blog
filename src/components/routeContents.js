@@ -5,7 +5,7 @@ import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { loveIs } from '../posts/loveIs.js';
 import { reason } from '../posts/reason.js';
 import { cryptocurrency } from '../posts/cryptocurrency.js';
-import { about } from '../posts/about.js';
+import { fp } from '../posts/fp.js';
 
 export const routeContents = {
   '/': {
@@ -36,8 +36,8 @@ export const routeContents = {
     route: cryptocurrency,
     title: 'Cryptocurrency.',
   },
-  '/about': {
-    route: about,
-    title: 'About developer.',
+  '/fp': {
+    route: fp,
+    title: 'Functional programming.',
   },
 };
