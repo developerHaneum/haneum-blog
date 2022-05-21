@@ -6,7 +6,7 @@ export const content = contents => `
     <div class="container-content">
       <div class="container-wrapper">
         <div class="content-title" role="title">
-          <a href="/feed">${contents.title}</a>
+          <a href="/">${contents.title}</a>
         </div>
       </div>
       <div class="container-wrapper" role="contents">

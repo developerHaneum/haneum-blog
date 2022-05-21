@@ -6,7 +6,7 @@ export const feed = () => {
   const render = () => {
     const contentMsg = `
       <div class="feed-container">
-          <div class="feed-container-content"></div>
+        <div class="feed-container-content"></div>
       </div>
     `;
     renderHTML(contentMsg, document.querySelector('#root'));
@@ -15,7 +15,7 @@ export const feed = () => {
         .map(
           path =>
             `${
-              !(path === '/feed' || path === '/404' || path === '/503')
+              !(path === '/' || path === '/404' || path === '/503')
                 ? `<div class="feed-container-wrapper">
                     <div class="feed-content-items" role="link">
                       <a href="${path}">${

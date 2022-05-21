@@ -1,17 +1,18 @@
-import { home } from '../routes/home.js';
+import { hi } from '../posts/hi.js';
 import { feed } from '../routes/feed.js';
 import { notFoundPage } from '../routes/notFoundPage.js';
 import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { loveIs } from '../posts/loveIs.js';
+import { cryptocurrency } from '../posts/cryptocurrency.js';
 
 export const routeContents = {
   '/': {
-    route: home,
+    route: feed,
     title: 'Haneum Blog',
   },
-  '/feed': {
-    route: feed,
-    title: 'Feed',
+  '/hi': {
+    route: hi,
+    title: 'Hi, Nice to meet you.',
   },
   '/404': {
     route: notFoundPage,
