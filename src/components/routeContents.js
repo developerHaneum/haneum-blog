@@ -3,9 +3,6 @@ import { feed } from '../routes/feed.js';
 import { notFoundPage } from '../routes/notFoundPage.js';
 import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { loveIs } from '../posts/loveIs.js';
-import { reason } from '../posts/reason.js';
-import { cryptocurrency } from '../posts/cryptocurrency.js';
-import { fp } from '../posts/fp.js';
 
 export const routeContents = {
   '/': {
@@ -28,16 +25,8 @@ export const routeContents = {
     route: loveIs,
     title: 'Love is.',
   },
-  '/reason': {
-    route: reason,
-    title: 'Reason.',
-  },
   '/cryptocurrency': {
     route: cryptocurrency,
     title: 'Cryptocurrency.',
-  },
-  '/fp': {
-    route: fp,
-    title: 'Functional programming.',
   },
 };
