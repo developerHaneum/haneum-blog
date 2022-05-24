@@ -1,7 +1,7 @@
 import './content.css';
 import { content } from './content.js';
 import { renderHTML } from './renderHTML.js';
-
+// Markdown processing logic place
 export const postMaker = contents => {
   const render = () => {
     renderHTML(content(contents), document.querySelector('#root'));
