@@ -36,14 +36,6 @@ const config = {
           'css-loader',
         ],
       },
-      {
-        test: /\.(png|jpe?g|gif)$/,
-        loader: 'url-loader',
-        options: {
-          name: '[name].[ext]?[hash]',
-          limit: 20000,
-        },
-      },
     ],
   },
   optimization: {
