@@ -13,11 +13,11 @@ export const feed = () => {
     renderHTML(
       Object.keys(routeContents)
         .map(
-          path =>
+          (path, key) =>
             `${
               !(path === '/' || path === '/404' || path === '/503')
                 ? `<div class="feed-container-wrapper">
-                    <div class="feed-content-items" role="link">
+                    <div id="${key}" class="feed-content-items" role="link">
                       <a href="${path}">${routeContents[path].title}</a>
                     </div>
                   </div>`

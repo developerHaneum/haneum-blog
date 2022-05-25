@@ -3,7 +3,7 @@ import './app.css';
 import './routes/notFoundPage.css';
 import { router } from './components/router.js';
 import { routeContents } from './components/routeContents.js';
-const nodeEnv = process.env.NODE_ENV || 'development';
+
 const app = () => {
   const render = () => {
     router(window.location.pathname);
