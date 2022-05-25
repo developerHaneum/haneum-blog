@@ -1,10 +1,10 @@
 import { feed } from '../routes/feed.js';
 import { notFoundPage } from '../routes/notFoundPage.js';
 import { serviceUnavailable } from '../routes/serviceUnavailable.js';
-import { hi } from '../contents/posts/hi.js';
-import { loveIs } from '../contents/posts/loveIs.js';
-import { cryptocurrency } from '../contents/posts/cryptocurrency.js';
-import { blog } from '../contents/posts/blog.js';
+import { hi } from '../posts/hi.js';
+import { loveIs } from '../posts/loveIs.js';
+import { cryptocurrency } from '../posts/cryptocurrency.js';
+import { blog } from '../posts/blog.js';
 
 export const routeContents = {
   '/': {

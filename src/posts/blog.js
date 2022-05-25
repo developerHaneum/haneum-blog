@@ -1,4 +1,4 @@
-import { postMaker } from '../../components/postMaker.js';
+import { postMaker } from '../components/postMaker.js';
 export const blog = () => {
   const contentMsg = `
     블로그에 댓글 기능이 없는 이유는 기술 관련 블로그는 올리지 않고 개인적인 견해만 올려서입니다.

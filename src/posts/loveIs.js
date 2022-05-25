@@ -1,4 +1,4 @@
-import { postMaker } from '../../components/postMaker.js';
+import { postMaker } from '../components/postMaker.js';
 
 export const loveIs = () => {
   const render = () => {
