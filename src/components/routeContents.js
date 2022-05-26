@@ -4,7 +4,6 @@ import { serviceUnavailable } from '../routes/serviceUnavailable.js';
 import { hi } from '../posts/hi.js';
 import { loveIs } from '../posts/loveIs.js';
 import { cryptocurrency } from '../posts/cryptocurrency.js';
-import { blog } from '../posts/blog.js';
 
 export const routeContents = {
   '/': {
@@ -30,9 +29,5 @@ export const routeContents = {
   '/cryptocurrency': {
     route: cryptocurrency,
     title: 'Cryptocurrency.',
-  },
-  '/blog': {
-    route: blog,
-    title: 'About this blog.',
   },
 };
