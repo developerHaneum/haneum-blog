@@ -1,24 +1,24 @@
-import { routeContents } from './routeContents.js';
-import { renderRoute } from './renderRoute.js';
+import { routes } from './routes.js';
+import { render } from './render.js';
 
 export const router = path => {
   if (!(path === window.location.pathname)) {
     window.history.pushState(null, null, window.location.origin + path);
   }
-  if (!routeContents[path]) {
+  if (!routes[path]) {
     if (!(path === '/')) {
-      renderRoute('/404');
+      render('/404');
     }
     return;
   }
-  renderRoute(path);
+  render(path);
   window.onpopstate = () => {
-    if (!routeContents[window.location.pathname]) {
+    if (!routes[window.location.pathname]) {
       if (!(window.location.pathname === '/')) {
-        renderRoute('/404');
+        render('/404');
       }
       return;
     }
-    renderRoute(window.location.pathname);
+    render(window.location.pathname);
   };
 };

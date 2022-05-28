@@ -1,6 +1,6 @@
 import './feed.css';
 import { renderHTML } from '../components/renderHTML.js';
-import { routeContents } from '../components/routeContents.js';
+import { routes } from '../components/routes.js';
 
 export const feed = () => {
   const render = () => {
@@ -11,14 +11,14 @@ export const feed = () => {
     `;
     renderHTML(contentMsg, document.querySelector('#root'));
     renderHTML(
-      Object.keys(routeContents)
+      Object.keys(routes)
         .map(
           (path, key) =>
             `${
-              !(path === '/' || path === '/404' || path === '/503')
+              !(path === '/' || path === '/404')
                 ? `<div class="feed-container-wrapper">
                     <div id="${key}" class="feed-content-items" role="link">
-                      <a href="${path}">${routeContents[path].title}</a>
+                      <a href="${path}">${routes[path].title}</a>
                     </div>
                   </div>`
                 : ''
