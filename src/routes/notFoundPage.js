@@ -1,7 +1,7 @@
 import './notFoundPage.css';
-import { renderHTML } from '../components/renderHTML.js';
+import renderHTML from '../components/renderHTML.js';
 
-export const notFoundPage = () => {
+const notFoundPage = () => {
   const render = () => {
     const contentMsg = `
       <div class="nfp-container">
@@ -35,3 +35,5 @@ export const notFoundPage = () => {
   };
   render();
 };
+
+export default notFoundPage;

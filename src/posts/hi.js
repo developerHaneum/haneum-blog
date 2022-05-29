@@ -1,6 +1,6 @@
-import { postMaker } from '../components/postMaker.js';
+import postMaker from '../components/postMaker.js';
 
-export const hi = () => {
+const hi = () => {
   const render = () => {
     const contentMsg = `
       My name is Cha Haneum, I am Korean, and I do Front-end development.
@@ -19,3 +19,5 @@ export const hi = () => {
   };
   render();
 };
+
+export default hi;

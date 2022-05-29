@@ -1,8 +1,8 @@
 import './feed.css';
-import { renderHTML } from '../components/renderHTML.js';
-import { routes } from '../components/routes.js';
+import renderHTML from '../components/renderHTML.js';
+import routes from '../components/routes.js';
 
-export const feed = () => {
+const feed = () => {
   const render = () => {
     const contentMsg = `
       <div class="feed-container">
@@ -50,3 +50,5 @@ export const feed = () => {
   };
   render();
 };
+
+export default feed;

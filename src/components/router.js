@@ -1,7 +1,7 @@
-import { routes } from './routes.js';
-import { render } from './render.js';
+import routes from './routes.js';
+import render from './render.js';
 
-export const router = path => {
+const router = path => {
   if (!(path === window.location.pathname)) {
     window.history.pushState(null, null, window.location.origin + path);
   }
@@ -22,3 +22,5 @@ export const router = path => {
     render(window.location.pathname);
   };
 };
+
+export default router;

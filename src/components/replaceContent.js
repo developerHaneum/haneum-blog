@@ -1,4 +1,4 @@
-export const replaceContent = content => {
+const replaceContent = content => {
   const arrContent = content.split('\n');
   if (arrContent[arrContent.length - 1].replace(/\s/g, '').length === 0) {
     arrContent.splice(-1, 1);
@@ -46,3 +46,5 @@ export const replaceContent = content => {
     )
     .join('')}`;
 };
+
+export default replaceContent;

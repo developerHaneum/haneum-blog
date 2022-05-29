@@ -1,4 +1,6 @@
-export const renderHTML = (content, targetElement) => {
+const renderHTML = (content, targetElement) => {
   targetElement.innerHTML = '';
   targetElement.insertAdjacentHTML('afterBegin', content);
 };
+
+export default renderHTML;

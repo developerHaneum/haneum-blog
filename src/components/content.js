@@ -1,7 +1,7 @@
 import './content.css';
-import { replaceContent } from './replaceContent.js';
+import replaceContent from './replaceContent.js';
 
-export const content = contents => `
+const content = contents => `
   <div class="container">
     <div class="container-content">
       <div class="container-wrapper">
@@ -16,3 +16,5 @@ export const content = contents => `
     </div>
   </div>
 `;
+
+export default content;

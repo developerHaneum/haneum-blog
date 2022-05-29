@@ -1,6 +1,6 @@
-import { postMaker } from '../components/postMaker.js';
+import postMaker from '../components/postMaker.js';
 
-export const loveIs = () => {
+const loveIs = () => {
   const render = () => {
     const contentMsg = `
       Love seems to be something that guides me on the right path.
@@ -14,3 +14,5 @@ export const loveIs = () => {
   };
   render();
 };
+
+export default loveIs;

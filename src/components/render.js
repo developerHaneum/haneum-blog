@@ -1,6 +1,6 @@
-import { routes } from './routes.js';
+import routes from './routes.js';
 
-export const render = path => {
+const render = path => {
   if (!routes[path].title) {
     document.title = 'This is Haneum';
   } else {
@@ -8,3 +8,5 @@ export const render = path => {
   }
   routes[path].route();
 };
+
+export default render;
