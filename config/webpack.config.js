@@ -3,11 +3,10 @@ import paths from './paths.js';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import SpeedMeasurePlugin from 'speed-measure-webpack-plugin';
 import ESBuildMinifyPlugin from 'esbuild-loader';
-import { WebpackManifestPlugin } from 'webpack-manifest-plugin';
+import WebpackManifestPlugin from 'webpack-manifest-plugin';
 
-const nodeEnv = process.env.NODE_ENV || 'development';
+console.log(paths.appNodeModules);
 export const webpackConfig = webpackEnv => {
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
@@ -48,14 +47,15 @@ export const webpackConfig = webpackEnv => {
       ],
     },
     resolve: {
-      extensions: ['.js', '.mjs'],
+      modules: ['node_modules', paths.appNodeModules],
+      extensions: paths.moduleFileExtensions.map(ext => `.${ext}`),
     },
     module: {
       rules: [
         {
           test: /\.js$/,
           loader: 'esbuild-loader',
-          exclude: /node_modules/,
+          exclude: paths.appNodeModules,
           options: {
             target: 'es2015',
           },
@@ -91,19 +91,10 @@ export const webpackConfig = webpackEnv => {
       new CleanWebpackPlugin.CleanWebpackPlugin({
         esModuleInterop: true,
       }),
-      new WebpackManifestPlugin({
+      new WebpackManifestPlugin.WebpackManifestPlugin({
         fileName: 'manifest.json',
         publicPath: paths.publicPath,
       }),
     ],
   };
 };
-const configWithSmp = new SpeedMeasurePlugin().wrap(
-  webpackConfig(nodeEnv === 'development' ? 'development' : 'production')
-);
-configWithSmp.plugins.push(
-  new MiniCssExtractPlugin({
-    filename: nodeEnv === 'development' ? '[name].css' : '[name].[hash].css',
-  })
-);
-export default configWithSmp;

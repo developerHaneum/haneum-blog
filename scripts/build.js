@@ -1,13 +1,17 @@
-// node env 제공해야 함
-
-import path from 'path';
-import paths from '../config/paths.js';
 import webpack from 'webpack';
 import { webpackConfig } from '../config/webpack.config.js';
+import SpeedMeasurePlugin from 'speed-measure-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-const config = webpackConfig('production');
-const appPackage = paths.appPackageJson;
-const publicUrl = paths.publicPath;
-const publicPath = config.output.publicPath;
-const buildFolder = path.relative(process.cwd(), paths.appBuild);
-const compiler = webpack(config);
+const config = webpackConfig('production'); // start는 원래 development 환경에서 진행하기 때문에 그냥 인자를 이것으로만 줘도 괜찮다.
+const configWithSmp = new SpeedMeasurePlugin().wrap(config);
+configWithSmp.plugins.push(
+  new MiniCssExtractPlugin({
+    filename: '[name].[hash:8].css',
+  })
+);
+const compiler = webpack(configWithSmp);
+const build = () => {
+  compiler.run();
+};
+build();
