@@ -8,7 +8,8 @@ const config = webpackConfig('development');
 const serverConfig = devServerConfig();
 const configWithSmp = new SpeedMeasurePlugin().wrap(config);
 const compiler = webpack(configWithSmp);
-const devServer = new WebpackDevServer(compiler, serverConfig);
+const devServer = new WebpackDevServer(serverConfig, compiler);
+
 const runServer = async () => {
   await devServer.start();
 };

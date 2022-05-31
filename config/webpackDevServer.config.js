@@ -8,7 +8,7 @@ export const devServerConfig = () => {
   return {
     compress: true,
     hot: true,
-    https: true,
+    server: 'https',
     static: {
       directory: path.join(__dirname, './dist'),
     },
