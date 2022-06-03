@@ -1,10 +1,10 @@
 .container {
   display: block;
 }
-.container-wrapper:nth-child(1) {
+.content-wrapper:nth-child(1) {
   padding: 10px 10px 17.5px 10px;
 }
-.container-wrapper:not(:nth-child(1)) {
+.content-wrapper:not(:nth-child(1)) {
   padding: 0 10px 10px 10px;
 }
 .container-content {
@@ -36,9 +36,6 @@
 }
 .content-main code {
   display: inline;
-}
-.content-main i {
-  font-style: italic;
 }
 .content-main b {
   background-color: rgb(255, 255, 0);
