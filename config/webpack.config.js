@@ -1,7 +1,6 @@
 import path from 'path';
 import paths from './paths.js';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ESBuildMinifyPlugin from 'esbuild-loader';
 import WebpackManifestPlugin from 'webpack-manifest-plugin';
@@ -104,9 +103,6 @@ const config = webpackEnv => {
             : undefined
         )
       ),
-      new CleanWebpackPlugin.CleanWebpackPlugin({
-        esModuleInterop: true,
-      }),
       new WebpackManifestPlugin.WebpackManifestPlugin({
         fileName: 'manifest.json',
         publicPath: paths.publicPath,
