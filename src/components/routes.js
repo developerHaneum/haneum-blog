@@ -3,6 +3,7 @@ import notFoundPage from '../routes/notFoundPage.js';
 import hi from '../posts/hi.js';
 import loveIs from '../posts/loveIs.js';
 import cryptocurrency from '../posts/cryptocurrency.js';
+import { myGod } from '../posts/myGod.js';
 
 const routes = {
   '/': {
@@ -24,6 +25,10 @@ const routes = {
   '/3': {
     route: cryptocurrency,
     title: 'Cryptocurrency.',
+  },
+  '/4': {
+    route: myGod,
+    title: 'Oh my god!',
   },
 };
 

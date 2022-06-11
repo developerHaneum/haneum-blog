@@ -6,7 +6,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ESBuildMinifyPlugin from 'esbuild-loader';
 import WebpackManifestPlugin from 'webpack-manifest-plugin';
 
-export const webpackConfig = webpackEnv => {
+const config = webpackEnv => {
   const isEnvDevelopment = webpackEnv === 'development';
   const isEnvProduction = webpackEnv === 'production';
   return {
@@ -80,13 +80,30 @@ export const webpackConfig = webpackEnv => {
       ],
     },
     plugins: [
-      new HtmlWebpackPlugin({
-        template: './index.html',
-        minify: {
-          collapseWhitespace: true,
-          removeComments: true,
-        },
-      }),
+      new HtmlWebpackPlugin(
+        Object.assign(
+          {
+            inject: true,
+            template: paths.appHtml,
+          },
+          isEnvProduction
+            ? {
+                minify: {
+                  removeComments: true,
+                  collapseWhitespace: true,
+                  removeRedundantAttributes: true,
+                  useShortDoctype: true,
+                  removeEmptyAttributes: true,
+                  removeStyleLinkTypeAttributes: true,
+                  keepClosingSlash: true,
+                  minifyJS: true,
+                  minifyCSS: true,
+                  minifyURLs: true, // ?
+                },
+              }
+            : undefined
+        )
+      ),
       new CleanWebpackPlugin.CleanWebpackPlugin({
         esModuleInterop: true,
       }),
@@ -97,3 +114,5 @@ export const webpackConfig = webpackEnv => {
     ],
   };
 };
+
+export default config;
