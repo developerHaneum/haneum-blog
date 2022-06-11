@@ -2,7 +2,7 @@
 This is my blog.
 
 ## Website link
-[haneum-blog](https://haneum-blog.vercel.app)
+~[haneum-blog](https://haneum-blog.vercel.app)~
 
 ## What features are they made of?
 - It is routed according to the current URL
